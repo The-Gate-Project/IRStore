@@ -1,0 +1,158 @@
+/* ========================================================= *
+ *                                                  	  				          *
+ *                   I  R  S  T  O  R  E   :    M a i n    C o m p o n e n t		          *
+ *                                                        					          *
+ * ========================================================= */
+
+SILENT
+
+/* ------------------------------------ *
+ *  Setting default variables  *
+ * ------------------------------------ */
+
+ACTION_IF is_tob BEGIN
+		OUTER_SPRINT pe_are "ar0700"
+		OUTER_SPRINT pe_sto "IRStore"
+END ELSE BEGIN
+		OUTER_SPRINT pe_are "ar0700"
+		OUTER_SPRINT pe_sto "IRStore"
+END
+
+/* ------------------------- *
+ *  Installing stores  *
+ * ------------------------- */
+
+COPY ~irstore/store~ ~override~       
+  	SAY NAME2 @22
+
+/* --------------------------------------------------- *
+ *  Installing Creature set		       *
+ * --------------------------------------------------- */
+
+COPY ~IRStore/portrait/Nathan4M.bmp~ ~override~
+
+COPY ~IRStore/portrait/Nathan4S.bmp~ ~override~
+
+
+ACTION_IF GAME_IS ~TOB BG2EE~ THEN 
+BEGIN
+COPY ~irstore/creature/Nathan.cre~ ~override~
+	SAY NAME1 @21
+	SAY NAME2 @21
+END
+
+/* ----------------------------------------------- *
+ *  Installing Scripts and Dialogues  *
+ * ------------------------------------------------ */
+
+COMPILE EVALUATE_BUFFER ~irstore/dialogue/IRStore.d~
+
+EXTEND_BOTTOM ~%pe_are%.bcs~ ~irstore/baf/IRStore.baf~
+
+/* ---------------------------------------------------- *
+ *  Copy BAMs or convert them to EE  *
+ * ---------------------------------------------------- */
+
+ACTION_IF GAME_IS ~bg2ee~ BEGIN
+	INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~			// Loads function converting inventory BAMs to EE.
+	ACTION_BASH_FOR ~IRStore/bam/~ ~^.+\.bam$~ BEGIN
+		ACTION_TO_LOWER %BASH_FOR_FILE%
+		ACTION_TO_LOWER %BASH_FOR_RES%
+		ACTION_IF (~%file-exc%~ STRING_CONTAINS_REGEXP ~%BASH_FOR_RES%~ = 1) BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+				LPF ~gw_convert_inventory_bam_to_ee~ END
+			BUT_ONLY
+		END ELSE BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+		END
+	END
+END ELSE BEGIN
+	COPY ~IRStore/bam~ ~override~
+END
+
+/* ------------------------ *
+ *  Installing Items  *
+ * ------------------------ */
+
+COPY ~IRStore/bam~ ~override~
+
+
+COPY ~IRStore/Items/IRBELTGS.ITM~ ~override~
+SAY NAME2 @101
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@103" END
+
+COPY ~IRStore/Items/IRBOOKCS.ITM~ ~override~
+SAY NAME2 @111
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@113" END
+
+COPY ~IRStore/Items/IRBOWENE.ITM~ ~override~
+SAY NAME2 @121
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@123" END
+
+COPY ~IRStore/Items/IRBOWIRN.ITM~ ~override~
+SAY NAME2 @131
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@133" END
+
+COPY ~IRStore/Items/IRBRAC02.ITM~ ~override~
+SAY NAME2 @141
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@143" END
+
+COPY ~IRStore/Items/IRBSDAGG.ITM~ ~override~
+SAY NAME2 @151
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@153" END
+
+COPY ~IRStore/Items/IRHAMTYR.ITM~ ~override~
+SAY NAME2 @161
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@163" END
+
+COPY ~IRStore/Items/IRKEYCS.ITM~ ~override~
+SAY NAME2 @171
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@173" END
+
+COPY ~IRStore/Items/IRMAGLSW.ITM~ ~override~
+SAY NAME2 @181
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@183" END
+
+COPY ~IRStore/Items/IRMAGROB.ITM~ ~override~
+SAY NAME2 @191
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@193" END
+
+COPY ~IRStore/Items/IRNGHTSC.ITM~ ~override~
+SAY NAME2 @201
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@203" END
+
+COPY ~IRStore/Items/IRPOTNCS.ITM~ ~override~
+SAY NAME2 @211
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@213" END
+
+COPY ~IRStore/Items/IRRINGVP.ITM~ ~override~
+SAY NAME2 @221
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@223" END
+
+COPY ~IRStore/Items/IRSLNGEL.ITM~ ~override~
+SAY NAME2 @231
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@233" END
+
+COPY ~IRStore/Items/IRSLNGTK.ITM~ ~override~
+SAY NAME2 @241
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@243" END
+
+COPY ~IRStore/Items/IRSLVHLM.ITM~ ~override~
+SAY NAME2 @251
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@253" END
+
+COPY ~IRStore/Items/IRSLVLSW.ITM~ ~override~
+SAY NAME2 @261
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@263" END
+
+COPY ~IRStore/Items/IRSLVPLT.ITM~ ~override~
+SAY NAME2 @271
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@273" END
+
+COPY ~IRStore/Items/IRSLVSHL.ITM~ ~override~
+SAY NAME2 @281
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@283" END
+
+COPY ~IRStore/Items/IRAMMOCS.ITM~ ~override~
+SAY NAME2 @291
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@293" END

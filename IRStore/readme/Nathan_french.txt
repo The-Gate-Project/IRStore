@@ -1,0 +1,40 @@
+MOD NATHAN POUR BALDUR’S GATE 2 THRONE OF BHAAL ET BALDUR'S GATE II ENHANCED EDITION - PAR THEO DE MOREE - ADAPTÉ PAR PROF ERRATA
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Voici un mod introduisant un nouveau marchand dans la Promenade de Waukyne, Nathan, qui vous fournira contre moultes pièces d’or des objets et des armes plutôt efficaces et fort utiles pour BG2.
+
+Installation :
+- BG2ToB, avec le dernier patch officiel Bioware 26498, ou bien la version GOG qui l’intègre déjà. Concernant le BG2Fixpack, dans sa dernière version (v13), installer surtout les correctifs principaux
+- BG2EE dans sa dernière version 2.6.6.0
+
+Compatibilité :
+Ce mod devrait être compatible avec la plupart des mods WeiDU existants.
+
+Le Mod :
+Cela fait un certain temps que j’ai parmi mes installations de BG2 ce mod fort ancien, utilisant l’obsolète programme IAP et conçu il y a des lustres en 2002. Il a l’avantage de fournir des objets intéressants, voire particulièrement utiles, au point que je ne peux pas m’en passer, surtout deux anneaux qui s’avèrent franchement indispensables pour affronter avec succès les créatures d’outre-tombe. Aussi, j’ai retroussé mes manches, retravaillé le mod sous un format plus moderne, tra-ifié au passage, et maintenant vous pouvez profiter des merveilleux objets que Nathan vous vendra. Au passage, j’ai récupéré une arme qui n’était pas pointée dans l’installation d’origine et j’ai étoffé sa présentation (le Marteau de Tyr).
+
+FAQ :
+Où peut-on trouver Nathan ?
+ Dans la Promenade de Waukyne, code AR0700 - x=2075 y=1220 .Il n’apparaîtra pas dans ToB.
+
+Remerciements :
+- JohBob qui a résolu un bug d'installation énervant
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Versions :
+- IRStorev1.01.exe : version initiale sous l’ancien format IAP - Mars 2002
+- V2 : version adaptée et actualisée sous format WeiDU 246 - Septembre 2019. Ajout de la version française par Prof Errata
+- V3 : version compatible avec BG2EE v2.6.6.0 et sous format WeiDU 249 - Janvier 2023
+- V4 : version corrigée - Janvier 2023
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Contact : 
+on peut me trouver sur :
+La Couronne de Cuivre - www.baldursgateworld.fr/lacouronne/
+sous le pseudonyme de Prof Errata.
+La Couronne de Cuivre est un excellent site francophone sur les JDR vidéos - et autres - que je recommande à tous.
+
+NB : vous avez toute latitude pour étudier, copier, distribuer ou même modifier ce mod sans me demander la permission, du moment qu’il n’y a aucune exploitation commerciale effectuée par la suite.

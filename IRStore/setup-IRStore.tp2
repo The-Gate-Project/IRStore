@@ -1,0 +1,55 @@
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// 		Mod Nathan pour BG2 par Theo de Morée		    //
+	//	 *adapté et actualisé par Prof Errata pour BG2ToB/BG2EE*	    //
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BACKUP ~IRStore/backup~
+AUTHOR ~Theo de Moree - Updated by Prof Errata~
+
+README ~IRStore/readme/Nathan_%LANGUAGE%.txt~
+ALWAYS
+
+INCLUDE ~IRStore/lib/always.tph~
+
+END	// of ALWAYS block
+
+
+AUTO_TRA ~IRStore/lang/%s~
+
+LANGUAGE ~English~
+        	~english~
+         	~IRStore/lang/english/dialog.tra~
+	~IRStore/lang/english/setup.tra~
+LANGUAGE ~Francais (par Prof Errata)~
+       	~french~
+	~IRStore/lang/french/dialog.tra~
+	~IRStore/lang/french/setup.tra~
+
+/* ========================== *
+ *   Nathan: Main component   	        *
+ * ========================== */
+
+BEGIN @0
+DESIGNATED 0 LABEL ~IRStore_main~
+REQUIRE_PREDICATE GAME_IS ~tob bg2ee~ @1  // ~This mod requires BG2ToB or BG2EE to be installed.~
+
+	INCLUDE ~IRStore/lib/main_component.tpa~
+
+
+/*==== Nathan Store ====*/
+
+COPY ~IRStore/store/IRStore.STO~ ~override~       
+  SAY NAME2 @22
+
+ACTION_IF GAME_IS ~TOB~ THEN BEGIN
+	EXTEND_BOTTOM ~ar0700.bcs~ ~IRStore/baf/IRStore.baf~
+	COMPILE ~IRStore/dialogue/IRStore.d~
+END
+
+ACTION_IF GAME_IS ~BG2EE~ THEN BEGIN
+	INCLUDE ~IRstore/lib/gw_functions.tpa~
+	EXTEND_BOTTOM ~ar0700.bcs~ ~IRStore/baf/IRStore.baf~
+	COMPILE ~IRStore/dialogue/IRStore.d~
+END

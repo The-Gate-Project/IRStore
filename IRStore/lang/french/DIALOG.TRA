@@ -1,12 +1,12 @@
 @9001 	= ~[Uu]tilisable\([ %tab%]+[Ss]eulement\|[ %tab%]+[Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
 @9002	 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
 
-@10 = ~Salutations, je m'appelle Nathan. Je suis arrivÃ© tout rÃ©cemment de Valombre. Ce fut un long trajet, mais je voulais obtenir le plus de valeur que je le pourrais des objets que j'ai collectÃ©.~
-@11 = ~Athkatla est rÃ©putÃ©e Ãªtre la plus riche citÃ© de tout FÃ©Ã©rune, aussi je savais qu' il y aurait lÃ  des aventuriers avec les sommes d'or que je recherche. Aimeriez-vous jeter un regard sur mes marchandises ? J'ai amassÃ© divers artefacts ici et lÃ  dans mes voyages dans les royaumes.~
-@12 = ~Montrez-les moi, s'il vous plaÃ®t.~
+@10 = ~Salutations, je m'appelle Nathan. Je suis arrivé tout récemment de Valombre. Ce fut un long trajet, mais je voulais obtenir le plus de valeur que je le pourrais des objets que j'ai collecté.~
+@11 = ~Athkatla est réputée être la plus riche cité de tout Féérune, aussi je savais qu' il y aurait là des aventuriers avec les sommes d'or que je recherche. Aimeriez-vous jeter un regard sur mes marchandises ? J'ai amassé divers artefacts ici et là dans mes voyages dans les royaumes.~
+@12 = ~Montrez-les moi, s'il vous plaît.~
 @13 = ~Non merci, je ne fais que passer.~
 @14 = ~Comme vous voulez.~
-@15 = ~Revenez bientÃ´t !~
+@15 = ~Revenez bientôt !~
 @20 = ~Mod Nathan (Necessite Throne of Bhaal ou BG2EE)~
 @21 = ~Nathan~
 @22 = ~Boutique de Nathan~
@@ -14,35 +14,35 @@
 
 
 @101 = ~La Folie de Jaycen~
-@103 = ~Cette ceinture fut crÃ©Ã©e par un Magicien rouge de Thay il y a longtemps de cela. Il parvint Ã  capturer un GÃ©ant des TempÃªtes et le draina de son Ã©nergie vitale afin de placer celle-ci dans la ceinture. Durant le processus, le gÃ©ant devint fou furieux et dÃ©truisit tout le laboratoire, interrompant le rituel. Cependant, la ceinture survÃ©cut et conserva le pouvoir de garantir la force de GÃ©ant Ã  son porteur.
+@103 = ~Cette ceinture fut créée par un Magicien rouge de Thay il y a longtemps de cela. Il parvint à capturer un Géant des Tempêtes et le draina de son énergie vitale afin de placer celle-ci dans la ceinture. Durant le processus, le géant devint fou furieux et détruisit tout le laboratoire, interrompant le rituel. Cependant, la ceinture survécut et conserva le pouvoir de garantir la force de Géant à son porteur.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ© d'Ã©quipementÂ :
- ForceÂ : mise Ã  25
-PoidsÂ : 2
+Capacité d'équipement :
+ Force : mise à 25
+Poids : 2
 
 Inutilisable par :
  Tueur de Magiciens~
 
 
 @111 = ~Sacoche pour livres~
-@113 = ~Cette solide sacoche permet de placer des douzaines de livres, protÃ©gÃ©s du feu, de la pluie ou de la foudre.~
+@113 = ~Cette solide sacoche permet de placer des douzaines de livres, protégés du feu, de la pluie ou de la foudre.~
 
 
-@121 = ~Arc d'Ã‰nergie~
-@123 = ~Cet arc a Ã©tÃ© imprÃ©gnÃ© d'une grande Ã©nergie magique. Ã€ chaque fois que la corde est bandÃ©e un projectile magique d'Ã©nergie est crÃ©Ã© qui occasionne de purs dÃ©gÃ¢ts magiques Ã  la cible. Quand ou comment cette arme fut crÃ©Ã©e est inconnuâ€¦mais elle a Ã©tÃ© utilisÃ©e par maints hÃ©ros au fil du temps.
+@121 = ~Arc d'Énergie~
+@123 = ~Cet arc a été imprégné d'une grande énergie magique. À chaque fois que la corde est bandée un projectile magique d'énergie est créé qui occasionne de purs dégâts magiques à la cible. Quand ou comment cette arme fut créée est inconnu…mais elle a été utilisée par maints héros au fil du temps.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ© de combat : 
- Ne nÃ©cessite pas de munitions
+Capacité de combat : 
+ Ne nécessite pas de munitions
 TAC0 : +4
-DÃ©gÃ¢ts : 3D4, +4 de DÃ©gÃ¢ts magiques
+Dégâts : 3D4, +4 de Dégâts magiques
 Poids : 6
 Facteur de Vitesse : 2
-Type de compÃ©tence : Arc long
-Type : Arme Ã  deux mains
+Type de compétence : Arc long
+Type : Arme à deux mains
 Requis : 13 en Force
 
 Inutilisable par :
@@ -53,32 +53,32 @@ Inutilisable par :
 
 
 @131 = ~Arc long +3 : Arc de Fer~
-@133 = ~Cet arc fut crÃ©Ã© il y a longtemps de cela par un groupe de mages guerriers pour leurs soldats. Ledit groupe non seulement entraÃ®nait ses mages dans l'art de la magie, mais aussi Ã  utiliser des armes. Ces arcs furent remis aux commandants de leur armÃ©e durant la guerre contre les barbares nordiques non seulement pour les protÃ©ger du froid, mais aussi pour incendier littÃ©ralement leurs ennemis. On ne sait pas combien de ces arcs ont survÃ©cu au temps.
+@133 = ~Cet arc fut créé il y a longtemps de cela par un groupe de mages guerriers pour leurs soldats. Ledit groupe non seulement entraînait ses mages dans l'art de la magie, mais aussi à utiliser des armes. Ces arcs furent remis aux commandants de leur armée durant la guerre contre les barbares nordiques non seulement pour les protéger du froid, mais aussi pour incendier littéralement leurs ennemis. On ne sait pas combien de ces arcs ont survécu au temps.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s de combat :
- +50% de RÃ©sistance au froid
- +50% RÃ©duction de DÃ©gÃ¢ts de froid
- Ne nÃ©cessite pas de munitions
+Capacités de combat :
+ +50% de Résistance au froid
+ +50% Réduction de Dégâts de froid
+ Ne nécessite pas de munitions
 TAC0 : +3
-DÃ©gÃ¢ts : 1D6+3, +2 DÃ©gÃ¢ts de feu
+Dégâts : 1D6+3, +2 Dégâts de feu
 Poids : 2
 Facteur de Vitesse : 4
-Type de compÃ©tence : Fronde
-Type : Arme Ã  deux mains
+Type de compétence : Fronde
+Type : Arme à deux mains
 Requis : 6 en Force
 
 Utilisable seulement par :
  Mage~
 
 
-@141 = ~Bracelets de dÃ©fense CAÂ 2~
-@143 = ~Ces bracelets sont si anciens que la plupart de leur histoire est inconnue. Ce que l'on sait est qu'ils furent dÃ©couverts il y a un siÃ¨cle de cela dans la tombe d'un ancien sorcier. Ils ont Ã©tÃ© portÃ© par plus d'un aventurier depuis et sont considÃ©rÃ©s comme un mythe par la plupart.
+@141 = ~Bracelets de défense CA 2~
+@143 = ~Ces bracelets sont si anciens que la plupart de leur histoire est inconnue. Ce que l'on sait est qu'ils furent découverts il y a un siècle de cela dans la tombe d'un ancien sorcier. Ils ont été porté par plus d'un aventurier depuis et sont considérés comme un mythe par la plupart.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ© d'Ã©quipementÂ :
+Capacité d'équipement :
 Classe d'Armure : 2
 Poids : 2
 
@@ -87,19 +87,19 @@ Inutilisable par :
 
 
 @151 = ~Dague +3 : Sournoise~
-@153 = ~Cette dague est fort bien forgÃ©e et a quelques enchantements magiques placÃ©s sur sa sombre lame. Elle est aussi trÃ¨s Ã©quilibrÃ©e et peut Ãªtre lancÃ©e aisÃ©ment. Si on la lance, elle revient dans la main de l'utilisateur. 20% du temps la dague s'"Ã©chappera" dÃ©libÃ©rÃ©ment et effectuera une attaque sournoise Ã  la cible avant de revenir dans la main du lanceur.
+@153 = ~Cette dague est fort bien forgée et a quelques enchantements magiques placés sur sa sombre lame. Elle est aussi très équilibrée et peut être lancée aisément. Si on la lance, elle revient dans la main de l'utilisateur. 20% du temps la dague s'"échappera" délibérément et effectuera une attaque sournoise à la cible avant de revenir dans la main du lanceur.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s de combat :
+Capacités de combat :
  Revient dans la main du lanceur
- 20% de chance que la cible reÃ§oit une Attaque sournoise x3
-DÃ©gÃ¢ts : 1D4+3
-Type de dÃ©gÃ¢ts : Perforant
+ 20% de chance que la cible reçoit une Attaque sournoise x3
+Dégâts : 1D4+3
+Type de dégâts : Perforant
 Poids : 1
 Facteur de Vitesse : 2
-Type de compÃ©tence : Dague
-Type : Arme Ã  une main
+Type de compétence : Dague
+Type : Arme à une main
 Requis : 3 en Force
 
 Inutilisable par :
@@ -107,24 +107,24 @@ Inutilisable par :
 
 
 @161 = ~Marteau de Tyr +5~
-@163 = ~Ce marteau est une relique sacrÃ©e du culte de Tyr. Il a voyagÃ© dans les royaumes avec divers prÃªtres et a Ã©tÃ© entreposÃ© dans nombre de temples afin de soutenir le combat contre le mal. Il y a mÃªme la rumeur qu'il soit le facteur principal derriÃ¨re la restauration de la citÃ© de Phlan aprÃ¨s l'Envol des Dragons. Il est aussi connu pour avoir Ã©tÃ© portÃ© par Kern Desenea, un paladin halfelin originaire de Phlan. Le marteau fut dÃ©robÃ© par le dieu malÃ©fique Baine quand le pÃ¨re de Kern, Tarl, l'utilisa pour dÃ©truire un Bassin de TÃ©nÃ¨bres. AprÃ¨s que Baine dÃ©cÃ©da durant le Temps des Troubles, le marteau fut perdu. Kern fut destinÃ© Ã  le rÃ©cupÃ©rer et plus tard l'utilisa pour dÃ©truire un Bassin du CrÃ©puscule.
-AprÃ¨s que le marteau fut rÃ©cupÃ©rÃ©, il fut Ã  nouveau placÃ© aux soins du Temple Ã  Phlan. Cependant, il fut bientÃ´t dÃ©robÃ© par un insignifiant voleur qui ne savait pas ce qu'il faisait. Il n'est jamais rÃ©apparu depuis.
-Cet artefact ressemble Ã  un marteau de guerre ordinaire hormis qu'il brille d'une vibrante couleur bleue.
+@163 = ~Ce marteau est une relique sacrée du culte de Tyr. Il a voyagé dans les royaumes avec divers prêtres et a été entreposé dans nombre de temples afin de soutenir le combat contre le mal. Il y a même la rumeur qu'il soit le facteur principal derrière la restauration de la cité de Phlan après l'Envol des Dragons. Il est aussi connu pour avoir été porté par Kern Desenea, un paladin halfelin originaire de Phlan. Le marteau fut dérobé par le dieu maléfique Baine quand le père de Kern, Tarl, l'utilisa pour détruire un Bassin de Ténèbres. Après que Baine décéda durant le Temps des Troubles, le marteau fut perdu. Kern fut destiné à le récupérer et plus tard l'utilisa pour détruire un Bassin du Crépuscule.
+Après que le marteau fut récupéré, il fut à nouveau placé aux soins du Temple à Phlan. Cependant, il fut bientôt dérobé par un insignifiant voleur qui ne savait pas ce qu'il faisait. Il n'est jamais réapparu depuis.
+Cet artefact ressemble à un marteau de guerre ordinaire hormis qu'il brille d'une vibrante couleur bleue.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s spÃ©ciales :
+Capacités spéciales :
  Rayon de Soleil 1 fois/jour
- GuÃ©rison 2 fois/jour
- ImmunitÃ© aux Sorts arcaniques des Niveaux 1 Ã  9
+ Guérison 2 fois/jour
+ Immunité aux Sorts arcaniques des Niveaux 1 à 9
 TAC0 : +5
 Facteur de Vitesse : 1
-DÃ©gÃ¢ts : 2D4 +6 MÃªlÃ©e & Lancer
+Dégâts : 2D4 +6 Mêlée & Lancer
  Revient au lanceur
-Type de dÃ©gÃ¢ts : Contondant
+Type de dégâts : Contondant
 Poids : 4
-Type de compÃ©tence : Marteau de guerre
-Type : Arme Ã  une main
+Type de compétence : Marteau de guerre
+Type : Arme à une main
 Requis : Force 14 & Sagesse 17
 
 Utilisable seulement par :
@@ -132,63 +132,63 @@ Utilisable seulement par :
  Paladin~
 
 
-@171 = ~Porte-clÃ©s~
-@173 = ~Cet anneau est conÃ§u pour rassembler des clÃ©s.~
+@171 = ~Porte-clés~
+@173 = ~Cet anneau est conçu pour rassembler des clés.~
 
 
-@181 = ~Ã‰pÃ©e bÃ¢tarde +3 : Ã‰pÃ©e de Lydek~
-@183 = ~Cette Ã©pÃ©e est la derniÃ¨re de celles crÃ©Ã©es par un ancien groupe de mages combattants afin d'Ãªtre utilisÃ©es par leurs officiers. Ces mages n'Ã©taient pas que seulement entraÃ®nÃ©s par les arts arcaniques mais au combat Ã©galement. Cette lame garantit au porteur un bonus Ã  son intelligence, augmente la vitesse d'incantation et ne peut Ãªtre rÃ©duit au silence. Elle occasionne aussi des dÃ©gÃ¢ts magiques supplÃ©mentaires quand elle touche un adversaire. Cette Ã©pÃ©e particuliÃ¨re fut utilisÃ©e par l'un des plus grands commandants de l'armÃ©e des mages, Lydek Terisonen. La rumeur prÃ©tend qu'elle lui fut dÃ©robÃ©e dans sa cabane aprÃ¨s qu'il eut pris sa retraite et fut considÃ©rÃ©e comme perdue depuis.
+@181 = ~Épée bâtarde +3 : Épée de Lydek~
+@183 = ~Cette épée est la dernière de celles créées par un ancien groupe de mages combattants afin d'être utilisées par leurs officiers. Ces mages n'étaient pas que seulement entraînés par les arts arcaniques mais au combat également. Cette lame garantit au porteur un bonus à son intelligence, augmente la vitesse d'incantation et ne peut être réduit au silence. Elle occasionne aussi des dégâts magiques supplémentaires quand elle touche un adversaire. Cette épée particulière fut utilisée par l'un des plus grands commandants de l'armée des mages, Lydek Terisonen. La rumeur prétend qu'elle lui fut dérobée dans sa cabane après qu'il eut pris sa retraite et fut considérée comme perdue depuis.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s spÃ©ciales :
+Capacités spéciales :
  +2 Bonus d'INT
  Vitesse d'Incantation : -2
  Vocalisation
-DÃ©gÃ¢ts : 2D4+3, +3 de DÃ©gÃ¢ts magiques
+Dégâts : 2D4+3, +3 de Dégâts magiques
 TAC0 : +3
-Type de dÃ©gÃ¢ts : Tranchant
+Type de dégâts : Tranchant
 Poids: 5
 Facteur de Vitesse : 3
-Type : Arme Ã  une main
+Type : Arme à une main
 
 Utilisable seulement par :
  Mage~
 
 
 @191 = ~Robe de mage de Lydek~
-@193 = ~Cette robe fut crÃ©Ã©e par un elfe mage du nom de Lydek Terisonen. Lydek Ã©tait des plus matÃ©rialistes, redoutant grandement qu'Ã  chaque fois qu'il voyageait il perdrait d'une faÃ§on ou d'une autre toutes ses merveilleuses babioles magiques. Pour combattre cette crainte, il passa de longues annÃ©es Ã  rechercher comment il pourrait combiner l'ensemble de ses pouvoirs favoris dans une robe apparemment des plus simples. AprÃ¨s plusieurs annÃ©es de recherche, et des milliers de piÃ¨ces d'or, il acheva finalement cette robe. Malheureusement, un mois seulement aprÃ¨s avoir Ã©tÃ© terminÃ©e, sa maison fut cambriolÃ©e par un pauvre mendiant recherchant juste quelque chose de chaud Ã  se mettre.
+@193 = ~Cette robe fut créée par un elfe mage du nom de Lydek Terisonen. Lydek était des plus matérialistes, redoutant grandement qu'à chaque fois qu'il voyageait il perdrait d'une façon ou d'une autre toutes ses merveilleuses babioles magiques. Pour combattre cette crainte, il passa de longues années à rechercher comment il pourrait combiner l'ensemble de ses pouvoirs favoris dans une robe apparemment des plus simples. Après plusieurs années de recherche, et des milliers de pièces d'or, il acheva finalement cette robe. Malheureusement, un mois seulement après avoir été terminée, sa maison fut cambriolée par un pauvre mendiant recherchant juste quelque chose de chaud à se mettre.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s spÃ©ciales :
- Classe d'ArmureÂ : 0
- Force mise Ã  18/00
- +5% de RÃ©sistance Ã  la Magie
+Capacités spéciales :
+ Classe d'Armure : 0
+ Force mise à 18/00
+ +5% de Résistance à la Magie
  Vitesse d'Incantation : -3
- Le porteur peut lancer des sorts supplÃ©mentaires: +3 de 1Â° Niveau, +2 de 2Â° Niveau, et +1 du 3Â° au 7Â° Niveau
+ Le porteur peut lancer des sorts supplémentaires: +3 de 1° Niveau, +2 de 2° Niveau, et +1 du 3° au 7° Niveau
 
 Utilisable seulement par :
  Mage~
 
 
 @201 = ~Cimeterre +3 : Lame de la Nuit~
-@203 = ~Cette Ã©pÃ©e a une sinistre lueur bleue foncÃ© autour de la lame. Elle a Ã©tÃ© utilisÃ©e par plusieurs guerriers, bons et mauvais, pour saisir leurs adversaires ignorants. La lame semble altÃ©rer les lueurs dans un rayon de 1,5 m autour de son porteur. Cela garantit Ã  l'utilisateur l'infravision ainsi que de le rendre virtuellement indÃ©tectable par des moyens magiques. La lame rend aussi son porteur invisible un certain nombre de fois par jour en rÃ©flÃ©chissant la lumiÃ¨re autour de lui. Cette Ã©pÃ©e unique est trÃ¨s froide au toucher, dÃ©livrant des dÃ©gÃ¢ts de froid supplÃ©mentaires Ã  chaque attaque rÃ©ussie. Il y a aussi une chance que quand il est touchÃ© , l'adversaire soit ralenti par le froid glacial.
+@203 = ~Cette épée a une sinistre lueur bleue foncé autour de la lame. Elle a été utilisée par plusieurs guerriers, bons et mauvais, pour saisir leurs adversaires ignorants. La lame semble altérer les lueurs dans un rayon de 1,5 m autour de son porteur. Cela garantit à l'utilisateur l'infravision ainsi que de le rendre virtuellement indétectable par des moyens magiques. La lame rend aussi son porteur invisible un certain nombre de fois par jour en réfléchissant la lumière autour de lui. Cette épée unique est très froide au toucher, délivrant des dégâts de froid supplémentaires à chaque attaque réussie. Il y a aussi une chance que quand il est touché , l'adversaire soit ralenti par le froid glacial.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s spÃ©ciales :
+Capacités spéciales :
  Infravision
- Non-DÃ©tection
- Lance InvisibilitÃ© 3 fois par jour
- 20% chance que la cible touchÃ©e soit ralentie pour une minute
+ Non-Détection
+ Lance Invisibilité 3 fois par jour
+ 20% chance que la cible touchée soit ralentie pour une minute
 TAC0 : +3
-DÃ©gÃ¢ts : 1D8+3, +3 dÃ©gÃ¢ts de froid
-Type de dÃ©gÃ¢ts : Tranchant
+Dégâts : 1D8+3, +3 dégâts de froid
+Type de dégâts : Tranchant
 Poids : 3
 Facteur de Vitesse : 2
-CompÃ©tence: Cimeterre/Wakizashi/Ninja-to
-Type : Arme Ã  une main
+Compétence: Cimeterre/Wakizashi/Ninja-to
+Type : Arme à une main
 Requis : 10 en Force
 
 Inutilisable par :
@@ -197,37 +197,37 @@ Inutilisable par :
  Voleur~
 
 
-@211 = ~Sac Ã  potions~
-@213 = ~Ce petit sac est idÃ©alement conÃ§u pour contenir des potions.~
+@211 = ~Sac à potions~
+@213 = ~Ce petit sac est idéalement conçu pour contenir des potions.~
 
 
 @221 = ~Anneau de protection vampirique~
-@223 = ~Le premier de ces anneaux fut commandÃ© par Sire Iconius Rathmor, un paladin rÃ©putÃ© dans les royaumes, pour l'aider Ã  la rÃ©cupÃ©ration d'une relique sacrÃ©e dÃ©robÃ©e par les agents d'un puissant vampire. Parmi toutes les espÃ¨ces de mort-vivants, ce que Sire Rathmor redoutait le plus Ã©taient les pouvoirs de domination mentale et de drainage de vie des vampires. En consÃ©quence, il commanda cet anneau non seulement pour se protÃ©ger de ces pouvoirs, mais aussi pour crÃ©er des armes pour dÃ©barrasser les royaumes de la peste du vampirisme. Le mage qui crÃ©a le premier anneau dÃ©cida qu'il pouvait en faire davantage, voyant le potentiel pour des profits. Cependant, ce mage mystÃ©rieusement disparut aprÃ¨s avoir produit un nombre limitÃ© de ces anneaux. On apprit ultÃ©riurement que le mage fut tuÃ© par un vampire qui avait appris qu'il Ã©tait le seul fournisseur des royaumes de ces puissants objets.
+@223 = ~Le premier de ces anneaux fut commandé par Sire Iconius Rathmor, un paladin réputé dans les royaumes, pour l'aider à la récupération d'une relique sacrée dérobée par les agents d'un puissant vampire. Parmi toutes les espèces de mort-vivants, ce que Sire Rathmor redoutait le plus étaient les pouvoirs de domination mentale et de drainage de vie des vampires. En conséquence, il commanda cet anneau non seulement pour se protéger de ces pouvoirs, mais aussi pour créer des armes pour débarrasser les royaumes de la peste du vampirisme. Le mage qui créa le premier anneau décida qu'il pouvait en faire davantage, voyant le potentiel pour des profits. Cependant, ce mage mystérieusement disparut après avoir produit un nombre limité de ces anneaux. On apprit ultériurement que le mage fut tué par un vampire qui avait appris qu'il était le seul fournisseur des royaumes de ces puissants objets.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s spÃ©ciales :
- ImmunitÃ© au Drainage de niveaux, Charme, Charme nÃ©faste et Domination
- CrÃ©ation d'Ã©pieux en bois Ã  volontÃ©
+Capacités spéciales :
+ Immunité au Drainage de niveaux, Charme, Charme néfaste et Domination
+ Création d'épieux en bois à volonté
 
 Inutilisable par :
  Tueur de Magiciens~
 
 
-@231 = ~Fronde des Ã‰lÃ©ments~
-@233 = ~Cette fronde fut crÃ©Ã©e par un puissant mage du nom de Lydek Terisonen. Cherchant un moyen de faire de la place pour ses divers composants de sorts, il crÃ©a cette fronde afin d'obtenir ses propres billes Ã  volontÃ©. Cette fronde peut lancer trois types diffÃ©rents de billes : feu, froid et Ã©lectrique.
+@231 = ~Fronde des Éléments~
+@233 = ~Cette fronde fut créée par un puissant mage du nom de Lydek Terisonen. Cherchant un moyen de faire de la place pour ses divers composants de sorts, il créa cette fronde afin d'obtenir ses propres billes à volonté. Cette fronde peut lancer trois types différents de billes : feu, froid et électrique.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s de combat :
- 1. 1D4+2, +2 DÃ©gÃ¢ts de feu
- 2. 1D4+2, +2 DÃ©gÃ¢ts Ã©lectriques
- 3. 1D4+2, +2 DÃ©gÃ¢ts de froid
+Capacités de combat :
+ 1. 1D4+2, +2 Dégâts de feu
+ 2. 1D4+2, +2 Dégâts électriques
+ 3. 1D4+2, +2 Dégâts de froid
  Note: ne pas placer de billes normales avec cette arme
 Poids : 0
 Facteur de Vitesse : 2
-Type de compÃ©tence : Fronde
-Type : Arme Ã  une main
+Type de compétence : Fronde
+Type : Arme à une main
 Requis : 3 en Force
 
 Non utilisable par :
@@ -236,18 +236,18 @@ Non utilisable par :
 
 
 @241 = ~Fronde +3 Tueuse de trolls~
-@243 = ~La premiÃ¨re de ces frondes fut commandÃ©e par des colons installÃ©s dans les parages des Landes des Trolls dans le Nord. Les colons utilisÃ¨rent ces frondes pour venir aisÃ©ment Ã  bout des attaques des trolls venant des landes. Elles sont enchantÃ©es afin de crÃ©er leurs propres billes, qui infligent des dÃ©gÃ¢ts de feu supplÃ©mentaires. Une fois que la rÃ©gion fut colonisÃ©e et fortifiÃ©e, certaines de ces frondes furent vendues Ã  des aventuriers de passage.
+@243 = ~La première de ces frondes fut commandée par des colons installés dans les parages des Landes des Trolls dans le Nord. Les colons utilisèrent ces frondes pour venir aisément à bout des attaques des trolls venant des landes. Elles sont enchantées afin de créer leurs propres billes, qui infligent des dégâts de feu supplémentaires. Une fois que la région fut colonisée et fortifiée, certaines de ces frondes furent vendues à des aventuriers de passage.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ© de combat :
- Munitions illimitÃ©es
+Capacité de combat :
+ Munitions illimitées
 TAC0 : +3
-DÃ©gÃ¢ts : 1D4+2, +2 DÃ©gÃ¢ts de feu
+Dégâts : 1D4+2, +2 Dégâts de feu
 Poids : 0
 Facteur de Vitesse : 3
-Type de compÃ©tence : Fronde
-Type : Arme Ã  une main
+Type de compétence : Fronde
+Type : Arme à une main
 Requis : 3 en Force
 
 Non utilisable par :
@@ -256,14 +256,14 @@ Non utilisable par :
 
 
 @251 = ~Heaume d'Argent +3~
-@253 = ~Ces heaumes furent utilisÃ©s par des aventuriers appelÃ©s les Lames d'Argent. Non seulement ils protÃ©geaient leurs porteurs au combat mais Ã©taient aussi capables de crÃ©er des images miroir plusieurs fois par jour. Peu de ces heaumes ont survÃ©cu au fil du temps, mais des rumeurs abondent sur la rÃ©apparition des Lames d'Argent.
+@253 = ~Ces heaumes furent utilisés par des aventuriers appelés les Lames d'Argent. Non seulement ils protégeaient leurs porteurs au combat mais étaient aussi capables de créer des images miroir plusieurs fois par jour. Peu de ces heaumes ont survécu au fil du temps, mais des rumeurs abondent sur la réapparition des Lames d'Argent.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s spÃ©ciales : 
+Capacités spéciales : 
  Lance "Image-miroir" 3 fois par jour
  Bonus Classe d'Armure : +3
-SpÃ©cial : protÃ¨ge des coups critiques
+Spécial : protège des coups critiques
 Poids : 2
 
 Inutilisable par :
@@ -272,20 +272,20 @@ Inutilisable par :
  Voleur~
 
 
-@261 = ~Ã‰pÃ©e longue d'Argent +3~
-@263 = ~Ces Ã©pÃ©es furent utilisÃ©es par les fameuses Lames d'Argent, un groupe d'aventuriers rÃ©putÃ© il y a longtemps de cela. On ne sait pas comment ou pourquoi ils ont disparu, mais les histoires de leurs exploits sont nombreuses et variÃ©es. Ces Ã©pÃ©es sont trÃ¨s efficaces contre tout type de lycanthrope, les rendant plus faciles Ã  toucher et Ã  blesser. Il y a aussi une chance que tout lycanthrope touchÃ© par une Ã©pÃ©e d'argent soit tuÃ©. Peu de ces Ã©pÃ©es ont survÃ©cu au temps, cependant, des rumeurs abondent sur la rÃ©apparition des Lames d'Argent.
+@261 = ~Épée longue d'Argent +3~
+@263 = ~Ces épées furent utilisées par les fameuses Lames d'Argent, un groupe d'aventuriers réputé il y a longtemps de cela. On ne sait pas comment ou pourquoi ils ont disparu, mais les histoires de leurs exploits sont nombreuses et variées. Ces épées sont très efficaces contre tout type de lycanthrope, les rendant plus faciles à toucher et à blesser. Il y a aussi une chance que tout lycanthrope touché par une épée d'argent soit tué. Peu de ces épées ont survécu au temps, cependant, des rumeurs abondent sur la réapparition des Lames d'Argent.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ© de combat :
+Capacité de combat :
  30% de chance de tuer tout lycanthrope au toucher
 TAC0 : +3, +5 contre les lycanthropes
-DÃ©gÃ¢ts : 1D8+3, +5 contre les lycanthropes
-Type de dÃ©gÃ¢t : Tranchant
+Dégâts : 1D8+3, +5 contre les lycanthropes
+Type de dégât : Tranchant
 Poids : 4
 Facteur de Vitesse : 2
-CompÃ©tence : Ã‰pÃ©e longue
-Type : Arme Ã  une main
+Compétence : Épée longue
+Type : Arme à une main
 Requis : 6 en Force
 
 Inutilisable par :
@@ -295,12 +295,12 @@ Inutilisable par :
 
 
 @271 = ~Armure de plates d'Argent +3~
-@273 = ~Ces armures furent utilisÃ©es il y a longtemps de cela par un groupe d'aventuriers appelÃ©s les Lames d'Argent. Chaque armure Ã©tait constituÃ©e d'argent pur et brillaient constamment. En raison de leur unique conception et d'amÃ©liorations magiques, tous les dÃ©gÃ¢ts Ã©lectriques sont renvoyÃ©s vers l'attaquant. Peu de ces armures ont survÃ©cu au fil du temps, mais des rumeurs sur la rÃ©apparition des lames d'Argent font florÃ¨s.
+@273 = ~Ces armures furent utilisées il y a longtemps de cela par un groupe d'aventuriers appelés les Lames d'Argent. Chaque armure était constituée d'argent pur et brillaient constamment. En raison de leur unique conception et d'améliorations magiques, tous les dégâts électriques sont renvoyés vers l'attaquant. Peu de ces armures ont survécu au fil du temps, mais des rumeurs sur la réapparition des lames d'Argent font florès.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ© d'Ã©quipement :
- RÃ©flÃ©chit tous les dÃ©gÃ¢ts Ã©lectriques vers l'attaquant
+Capacité d'équipement :
+ Réfléchit tous les dégâts électriques vers l'attaquant
 Classe d'Armure : -2
 Poids : 50
 Requis : 12 en Force
@@ -312,13 +312,13 @@ Inutilisable par :
  Voleur~
 
 
-@281 = ~Ã‰cu d'Argent +3~
-@283 = ~Cet Ã©cu fut l'un de ceux utilisÃ©s par un groupe d'aventuriers appelÃ© les Lames d'Argent. Non seulement des protections magiques sont placÃ©s dans le bouclier, mais il est capable de rÃ©flÃ©chir les attaques du regard comme ceux d'un basilic ou d'un spectateurâ€¦Peu de ces artefacts ont survÃ©cu au fil du temps, mais il ya des rumeurs de la rÃ©apparition de l'organisation des Lames d'Argent.
+@281 = ~Écu d'Argent +3~
+@283 = ~Cet écu fut l'un de ceux utilisés par un groupe d'aventuriers appelé les Lames d'Argent. Non seulement des protections magiques sont placés dans le bouclier, mais il est capable de réfléchir les attaques du regard comme ceux d'un basilic ou d'un spectateur…Peu de ces artefacts ont survécu au fil du temps, mais il ya des rumeurs de la réapparition de l'organisation des Lames d'Argent.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ© d'Ã©quipement :
- RÃ©flÃ©chit les attaques de regard
+Capacité d'équipement :
+ Réfléchit les attaques de regard
 Bonus de Classe d'armure : -4
 Poids : 7
 Requis : 12 en Force
@@ -330,5 +330,5 @@ Inutilisable par :
  Voleur~
 
 
-@291 = ~Ã‰tui d'archer~
-@293 = ~Ce petit Ã©tui est idÃ©alement conÃ§u pour contenir des munitions.~
+@291 = ~Étui d'archer~
+@293 = ~Ce petit étui est idéalement conçu pour contenir des munitions.~

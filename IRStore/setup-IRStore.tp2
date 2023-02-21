@@ -9,9 +9,33 @@ BACKUP ~IRStore/backup~
 AUTHOR ~Theo de Moree - Updated by Prof Errata~
 
 README ~IRStore/readme/Nathan_%LANGUAGE%.txt~
-ALWAYS
 
-INCLUDE ~IRStore/lib/always.tph~
+ALWAYS	
+
+			//Copies tra files into the autotra-folder (to leave the originals untouched)
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~IRStore/lang/French~  ~IRStore/lang/autotra/%LANGUAGE%~
+      COPY ~IRStore/lang/%LANGUAGE%~  ~IRStore/lang/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
+
+//  ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
+
+ ACTION_DEFINE_ARRAY fl#reload BEGIN dialog setup END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charsets = 1
+      STR_VAR
+        tra_path = EVAL ~IRStore/lang/autotra~
+//        noconvert_array = fl#noconvert
+        reload_array = fl#reload
+	END
+
+//
+INCLUDE ~IRStore/lib/gw_functions.tpa~
 
 END	// of ALWAYS block
 
@@ -19,13 +43,13 @@ END	// of ALWAYS block
 AUTO_TRA ~IRStore/lang/%s~
 
 LANGUAGE ~English~
-        	~english~
-         	~IRStore/lang/english/dialog.tra~
-	~IRStore/lang/english/setup.tra~
+         ~english~
+         ~IRStore/lang/english/dialog.tra~
+         ~IRStore/lang/english/setup.tra~
 LANGUAGE ~Francais (par Prof Errata)~
-       	~french~
-	~IRStore/lang/french/dialog.tra~
-	~IRStore/lang/french/setup.tra~
+         ~french~
+         ~IRStore/lang/french/dialog.tra~
+         ~IRStore/lang/french/setup.tra~
 
 /* ========================== *
  *   Nathan: Main component   	        *
@@ -33,7 +57,7 @@ LANGUAGE ~Francais (par Prof Errata)~
 
 BEGIN @0
 DESIGNATED 0 LABEL ~IRStore_main~
-REQUIRE_PREDICATE GAME_IS ~tob bg2ee~ @1  // ~This mod requires BG2ToB or BG2EE to be installed.~
+REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet~ @1  // ~This mod requires BG2ToB or BG2EE to be installed.~
 
 	INCLUDE ~IRStore/lib/main_component.tpa~
 
@@ -43,13 +67,7 @@ REQUIRE_PREDICATE GAME_IS ~tob bg2ee~ @1  // ~This mod requires BG2ToB or BG2EE 
 COPY ~IRStore/store/IRStore.STO~ ~override~       
   SAY NAME2 @22
 
-ACTION_IF GAME_IS ~TOB~ THEN BEGIN
-	EXTEND_BOTTOM ~ar0700.bcs~ ~IRStore/baf/IRStore.baf~
-	COMPILE ~IRStore/dialogue/IRStore.d~
-END
-
-ACTION_IF GAME_IS ~BG2EE~ THEN BEGIN
-	INCLUDE ~IRstore/lib/gw_functions.tpa~
+ACTION_IF GAME_IS ~tob bg2ee eet~ THEN BEGIN
 	EXTEND_BOTTOM ~ar0700.bcs~ ~IRStore/baf/IRStore.baf~
 	COMPILE ~IRStore/dialogue/IRStore.d~
 END

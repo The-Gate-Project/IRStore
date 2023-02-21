@@ -10,7 +10,7 @@ SILENT
  *  Setting default variables  *
  * ------------------------------------ */
 
-ACTION_IF is_tob BEGIN
+ACTION_IF GAME_IS ~tob~ BEGIN
 		OUTER_SPRINT pe_are "ar0700"
 		OUTER_SPRINT pe_sto "IRStore"
 END ELSE BEGIN
@@ -34,7 +34,7 @@ COPY ~IRStore/portrait/Nathan4M.bmp~ ~override~
 COPY ~IRStore/portrait/Nathan4S.bmp~ ~override~
 
 
-ACTION_IF GAME_IS ~TOB BG2EE~ THEN 
+ACTION_IF GAME_IS ~tob bg2ee eet~ THEN 
 BEGIN
 COPY ~irstore/creature/Nathan.cre~ ~override~
 	SAY NAME1 @21
@@ -53,8 +53,9 @@ EXTEND_BOTTOM ~%pe_are%.bcs~ ~irstore/baf/IRStore.baf~
  *  Copy BAMs or convert them to EE  *
  * ---------------------------------------------------- */
 
-ACTION_IF GAME_IS ~bg2ee~ BEGIN
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 	INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~			// Loads function converting inventory BAMs to EE.
+	OUTER_SPRINT file-exc ~ENARROW ~	// Special cases: unused inventory or description icons, and ability .bam don't need to be converted.
 	ACTION_BASH_FOR ~IRStore/bam/~ ~^.+\.bam$~ BEGIN
 		ACTION_TO_LOWER %BASH_FOR_FILE%
 		ACTION_TO_LOWER %BASH_FOR_RES%
@@ -74,7 +75,7 @@ END
  *  Installing Items  *
  * ------------------------ */
 
-COPY ~IRStore/bam~ ~override~
+COPY ~IRStore/pro~ ~override~
 
 
 COPY ~IRStore/Items/IRBELTGS.ITM~ ~override~

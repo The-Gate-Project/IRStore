@@ -16,11 +16,13 @@
 @101 = ~La Folie de Jaycen~
 @103 = ~Cette ceinture fut créée par un Magicien rouge de Thay il y a longtemps de cela. Il parvint à capturer un Géant des Tempêtes et le draina de son énergie vitale afin de placer celle-ci dans la ceinture. Durant le processus, le géant devint fou furieux et détruisit tout le laboratoire, interrompant le rituel. Cependant, la ceinture survécut et conserva le pouvoir de garantir la force de Géant à son porteur.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacité d'équipement :
- Force : mise à 24
-Poids : 2
+Capacités d'équipement : 
+- Force : Passe à 24
+- Force exceptionnelle : Passe à 100
+
+Poids : 2
 
 Inutilisable par :
  Tueur de Magiciens~
@@ -33,17 +35,27 @@ Inutilisable par :
 @121 = ~Arc d'Énergie~
 @123 = ~Cet arc a été imprégné d'une grande énergie magique. À chaque fois que la corde est bandée un projectile magique d'énergie est créé qui occasionne de purs dégâts magiques à la cible. Quand ou comment cette arme fut créée est inconnu…mais elle a été utilisée par maints héros au fil du temps.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacité de combat : 
- Ne nécessite pas de munitions
+Capacités d'équipement : 
+- Attaque par round : Passe à 2
+
+Capacités de combat : 
+- Ne nécessite pas de munitions
+- Inflige 3d4 points de dégâts magiques à la cible
+- Inflige 4 points de dégâts magiques à la cible
+
+Enchantement : +4
 TAC0 : +4
-Dégâts : 3D4, +4 de Dégâts magiques
-Poids : 6
-Facteur de Vitesse : 2
+Type de dégâts : Projectile
+Facteur de vitesse : 2
 Type de compétence : Arc long
-Type : Arme à deux mains
-Requis : 13 en Force
+Type : Arme à 2 mains
+
+Poids : 6
+
+Nécessite : 
+- Force : 13
 
 Inutilisable par :
  Druide
@@ -55,19 +67,29 @@ Inutilisable par :
 @131 = ~Arc long +3 : Arc de Fer~
 @133 = ~Cet arc fut créé il y a longtemps de cela par un groupe de mages guerriers pour leurs soldats. Ledit groupe non seulement entraînait ses mages dans l'art de la magie, mais aussi à utiliser des armes. Ces arcs furent remis aux commandants de leur armée durant la guerre contre les barbares nordiques non seulement pour les protéger du froid, mais aussi pour incendier littéralement leurs ennemis. On ne sait pas combien de ces arcs ont survécu au temps.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacités de combat :
- +50% de Résistance au froid
- +50% Réduction de Dégâts de froid
- Ne nécessite pas de munitions
+Capacités d'équipement : 
+- Attaque par round : Passe à 2
+- Résistance au froid : -50 %
+- Résistance aux dégâts de froid magiques : -50 %
+
+Capacités de combat : 
+- Ne nécessite pas de munitions
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +3
 TAC0 : +3
-Dégâts : 1D6+3, +2 Dégâts de feu
+Dégâts : 1d6 +3
+Type de dégâts : Projectile
+Facteur de vitesse : 4
+Type de compétence : Arc long
+Type : Arme à 2 mains
+
 Poids : 2
-Facteur de Vitesse : 4
-Type de compétence : Fronde
-Type : Arme à deux mains
-Requis : 6 en Force
+
+Nécessite : 
+- Force : 6
 
 Utilisable seulement par :
  Mage~
@@ -89,18 +111,25 @@ Inutilisable par :
 @151 = ~Dague +3 : Sournoise~
 @153 = ~Cette dague est fort bien forgée et a quelques enchantements magiques placés sur sa sombre lame. Elle est aussi très équilibrée et peut être lancée aisément. Si on la lance, elle revient dans la main de l'utilisateur. 20% du temps la dague s'"échappera" délibérément et effectuera une attaque sournoise à la cible avant de revenir dans la main du lanceur.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacités de combat :
- Revient dans la main du lanceur
- 20% de chance que la cible reçoit une Attaque sournoise x3
-Dégâts : 1D4+3
-Type de dégâts : Perforant
-Poids : 1
-Facteur de Vitesse : 2
+Capacités de combat : 
+- Revient dans la main du lanceur
+- Attaque par round : Passe à 3
+- 21 % de chance d'infliger 3d4 points de dégâts perforants à la cible
+
+Enchantement : +3
+Dégâts : 1d4 +3
+Type de dégâts (au corps à corps) : Perforant
+Type de dégâts (à distance) : Perforant
+Facteur de vitesse : 2
 Type de compétence : Dague
-Type : Arme à une main
-Requis : 3 en Force
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- Force : 3
 
 Inutilisable par :
  Clerc~
@@ -111,21 +140,32 @@ Inutilisable par :
 Après que le marteau fut récupéré, il fut à nouveau placé aux soins du Temple à Phlan. Cependant, il fut bientôt dérobé par un insignifiant voleur qui ne savait pas ce qu'il faisait. Il n'est jamais réapparu depuis.
 Cet artefact ressemble à un marteau de guerre ordinaire hormis qu'il brille d'une vibrante couleur bleue.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacités spéciales :
- Rayon de Soleil 1 fois/jour
- Guérison 2 fois/jour
- Immunité aux Sorts arcaniques des Niveaux 1 à 9
+Capacités d'équipement : 
+- Immunité aux sorts
+
+Capacités de charge : 
+- Rayon de soleil (instantané) (1 fois par jour)
+- Guérison (comme un lanceur de sorts de niveau 20) (2 fois par jour)
+
+Capacités de combat : 
+- Revient dans la main du lanceur
+
+Enchantement : +5
 TAC0 : +5
-Facteur de Vitesse : 1
-Dégâts : 2D4 +6 Mêlée & Lancer
- Revient au lanceur
-Type de dégâts : Contondant
-Poids : 4
+Dégâts : 2d4 +6
+Type de dégâts (au corps à corps) : Contondant
+Type de dégâts (à distance) : Contondant
+Facteur de vitesse : 1
 Type de compétence : Marteau de guerre
-Type : Arme à une main
-Requis : Force 14 & Sagesse 17
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- Force : 14
+- Sagesse : 17
 
 Utilisable seulement par :
  Clerc d'alignement bon
@@ -139,18 +179,25 @@ Utilisable seulement par :
 @181 = ~Épée bâtarde +3 : Épée de Lydek~
 @183 = ~Cette épée est la dernière de celles créées par un ancien groupe de mages combattants afin d'être utilisées par leurs officiers. Ces mages n'étaient pas que seulement entraînés par les arts arcaniques mais au combat également. Cette lame garantit au porteur un bonus à son intelligence, augmente la vitesse d'incantation et ne peut être réduit au silence. Elle occasionne aussi des dégâts magiques supplémentaires quand elle touche un adversaire. Cette épée particulière fut utilisée par l'un des plus grands commandants de l'armée des mages, Lydek Terisonen. La rumeur prétend qu'elle lui fut dérobée dans sa cabane après qu'il eut pris sa retraite et fut considérée comme perdue depuis.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacités spéciales :
- +2 Bonus d'INT
- Vitesse d'Incantation : -2
- Vocalisation
-Dégâts : 2D4+3, +3 de Dégâts magiques
+Capacités d'équipement : 
+- Temps d'incantation : -2
+- Intelligence : +2
+- Dissipation du silence
+
+Capacités de combat : 
+- Inflige 3 points de dégâts magiques à la cible
+
+Enchantement : +3
 TAC0 : +3
+Dégâts : 2d4 +3
 Type de dégâts : Tranchant
-Poids: 5
-Facteur de Vitesse : 3
-Type : Arme à une main
+Facteur de vitesse : 3
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 5
 
 Utilisable seulement par :
  Mage~
@@ -159,14 +206,19 @@ Utilisable seulement par :
 @191 = ~Robe de mage de Lydek~
 @193 = ~Cette robe fut créée par un elfe mage du nom de Lydek Terisonen. Lydek était des plus matérialistes, redoutant grandement qu'à chaque fois qu'il voyageait il perdrait d'une façon ou d'une autre toutes ses merveilleuses babioles magiques. Pour combattre cette crainte, il passa de longues années à rechercher comment il pourrait combiner l'ensemble de ses pouvoirs favoris dans une robe apparemment des plus simples. Après plusieurs années de recherche, et des milliers de pièces d'or, il acheva finalement cette robe. Malheureusement, un mois seulement après avoir été terminée, sa maison fut cambriolée par un pauvre mendiant recherchant juste quelque chose de chaud à se mettre.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacités spéciales :
- Classe d'Armure : 0
- Force mise à 18/00
- +5% de Résistance à la Magie
- Vitesse d'Incantation : -3
- Le porteur peut lancer des sorts supplémentaires: +3 de 1° Niveau, +2 de 2° Niveau, et +1 du 3° au 7° Niveau
+Capacités d'équipement : 
+- Mémorisation d'un sort profane supplémentaire de niveau 3, 4, 5, 6 et 7
+- Mémorisation de 2 sorts profanes supplémentaires de niveau 2
+- Mémorisation de 3 sorts profanes supplémentaires de niveau 1
+- Classe d'armure de base : 0
+- Temps d'incantation : -3
+- Force : Passe à 18
+- Force exceptionnelle : Passe à 100
+- Résistance à la magie : +5 %
+
+Poids : 6
 
 Utilisable seulement par :
  Mage~
@@ -175,21 +227,32 @@ Utilisable seulement par :
 @201 = ~Cimeterre +3 : Lame de la Nuit~
 @203 = ~Cette épée a une sinistre lueur bleue foncé autour de la lame. Elle a été utilisée par plusieurs guerriers, bons et mauvais, pour saisir leurs adversaires ignorants. La lame semble altérer les lueurs dans un rayon de 1,5 m autour de son porteur. Cela garantit à l'utilisateur l'infravision ainsi que de le rendre virtuellement indétectable par des moyens magiques. La lame rend aussi son porteur invisible un certain nombre de fois par jour en réfléchissant la lumière autour de lui. Cette épée unique est très froide au toucher, délivrant des dégâts de froid supplémentaires à chaque attaque réussie. Il y a aussi une chance que quand il est touché , l'adversaire soit ralenti par le froid glacial.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacités spéciales :
- Infravision
- Non-Détection
- Lance Invisibilité 3 fois par jour
- 20% chance que la cible touchée soit ralentie pour une minute
+Capacités d'équipement : 
+- Non-détection
+- Infravision
+
+Capacités de charge : 
+- Invisibilité (instantané) (3 fois par jour)
+
+Capacités de combat : 
+- Les bonus de Force ne s'appliquent pas à cette arme
+- Inflige 3 points de dégâts de froid magique à la cible
+- 21 % de chance d'infliger lenteur à la cible pendant 1 tour
+
+Enchantement : +3
 TAC0 : +3
-Dégâts : 1D8+3, +3 dégâts de froid
+Dégâts : 1d8 +3
 Type de dégâts : Tranchant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre/Wakizashi/Ninjato
+Type : Arme à 1 main
+
 Poids : 3
-Facteur de Vitesse : 2
-Compétence: Cimeterre/Wakizashi/Ninja-to
-Type : Arme à une main
-Requis : 10 en Force
+
+Nécessite : 
+- Force : 10
 
 Inutilisable par :
  Clerc
@@ -219,16 +282,25 @@ Inutilisable par :
 
 PARAMÈTRES :
 
-Capacités de combat :
+Capacités de combat : 
+- Ne nécessite pas de munitions
  1. 1D4+2, +2 Dégâts de feu
  2. 1D4+2, +2 Dégâts électriques
  3. 1D4+2, +2 Dégâts de froid
  Note: ne pas placer de billes normales avec cette arme
-Poids : 0
-Facteur de Vitesse : 2
+ 
+Enchantement : +4
+TAC0 : +4
+Dégâts : 1d4 +6
+Type de dégâts (à distance) : Projectile
+Facteur de vitesse : 2
 Type de compétence : Fronde
-Type : Arme à une main
-Requis : 3 en Force
+Type : Arme à 1 main
+
+Poids : 0
+
+Nécessite : 
+- Force : 3
 
 Non utilisable par :
  Kensai
@@ -238,17 +310,27 @@ Non utilisable par :
 @241 = ~Fronde +3 Tueuse de trolls~
 @243 = ~La première de ces frondes fut commandée par des colons installés dans les parages des Landes des Trolls dans le Nord. Les colons utilisèrent ces frondes pour venir aisément à bout des attaques des trolls venant des landes. Elles sont enchantées afin de créer leurs propres billes, qui infligent des dégâts de feu supplémentaires. Une fois que la région fut colonisée et fortifiée, certaines de ces frondes furent vendues à des aventuriers de passage.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacité de combat :
- Munitions illimitées
+Capacités d'équipement : 
+- Attaque par round : Passe à 1
+
+Capacités de combat : 
+- Ne nécessite pas de munitions
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +3
 TAC0 : +3
-Dégâts : 1D4+2, +2 Dégâts de feu
-Poids : 0
-Facteur de Vitesse : 3
+Dégâts : 1d4 +5
+Type de dégâts : Projectile
+Facteur de vitesse : 3
 Type de compétence : Fronde
-Type : Arme à une main
-Requis : 3 en Force
+Type : Arme à 1 main
+
+Poids : 0
+
+Nécessite : 
+- Force : 3
 
 Non utilisable par :
  Kensai
@@ -258,12 +340,15 @@ Non utilisable par :
 @251 = ~Heaume d'Argent +3~
 @253 = ~Ces heaumes furent utilisés par des aventuriers appelés les Lames d'Argent. Non seulement ils protégeaient leurs porteurs au combat mais étaient aussi capables de créer des images miroir plusieurs fois par jour. Peu de ces heaumes ont survécu au fil du temps, mais des rumeurs abondent sur la réapparition des Lames d'Argent.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacités spéciales : 
- Lance "Image-miroir" 3 fois par jour
- Bonus Classe d'Armure : +3
-Spécial : protège des coups critiques
+Capacités d'équipement : 
+- Protection contre les coups critiques
+- Classe d'armure : Bonus de 3
+
+Capacités de charge : 
+- Image miroir (instantané) (3 fois par jour)
+
 Poids : 2
 
 Inutilisable par :
@@ -297,13 +382,20 @@ Inutilisable par :
 @271 = ~Armure de plates d'Argent +3~
 @273 = ~Ces armures furent utilisées il y a longtemps de cela par un groupe d'aventuriers appelés les Lames d'Argent. Chaque armure était constituée d'argent pur et brillaient constamment. En raison de leur unique conception et d'améliorations magiques, tous les dégâts électriques sont renvoyés vers l'attaquant. Peu de ces armures ont survécu au fil du temps, mais des rumeurs sur la réapparition des lames d'Argent font florès.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacité d'équipement :
- Réfléchit tous les dégâts électriques vers l'attaquant
-Classe d'Armure : -2
+Capacités d'équipement : 
+- Classe d'armure de base : -2
+- Classe d'armure : Bonus de 3 contre les armes perforantes et les projectiles
+- Classe d'armure : Bonus de 4 contre les armes tranchantes
+- Renvoie les éclairs
+- Empêche l'utilisation des compétences de voleur
+- Empêche l'utilisation du camouflage dans l'ombre
+
 Poids : 50
-Requis : 12 en Force
+
+Nécessite : 
+- Force : 15
 
 Inutilisable par :
  Barde
@@ -317,11 +409,14 @@ Inutilisable par :
 
 PARAMÈTRES :
 
-Capacité d'équipement :
- Réfléchit les attaques de regard
-Bonus de Classe d'armure : -4
+Capacités d'équipement : 
+- Classe d'armure : Bonus de 3
+- Réfléchit les attaques de regard
+
 Poids : 7
-Requis : 12 en Force
+
+Nécessite : 
+- Force : 12
 
 Inutilisable par :
  Barde

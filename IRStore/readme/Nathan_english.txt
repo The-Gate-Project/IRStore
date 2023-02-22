@@ -18,8 +18,6 @@ FAQ :
 Where can I find Nathan ?
  On the Waukeen Promenade, code AR0700 - x=2075 y=1220. He will not appear in ToB.
 
-Acknowledgements :
- - JohBob who has solved an annoying installation bug
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

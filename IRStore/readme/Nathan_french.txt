@@ -18,8 +18,6 @@ FAQ :
 Où peut-on trouver Nathan ?
  Dans la Promenade de Waukyne, code AR0700 - x=2075 y=1220 .Il n’apparaîtra pas dans ToB.
 
-Remerciements :
-- JohBob qui a résolu un bug d'installation énervant
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

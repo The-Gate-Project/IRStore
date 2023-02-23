@@ -14,12 +14,13 @@
 
 
 @101 = ~Jaycen's Folly~
-@103 = ~This belt was created by a Red Wizard of Thay long ago. He sought to capture a Storm Giant and drain its life energy to be added to the belt. During the process, the giant became enraged with insanity and destroyed everything in the laboratory, interrupting the ritual. However, the belt survived and retained the power to grant the giants strengh to the wearer.
+@103 = ~This belt was created by a Red Wizard of Thay long ago. He sought to capture a Storm Giant and drain its life energy to be added to the belt. During the process, the giant became enraged with insanity and destroyed everything in the laboratory, interrupting the ritual. However, the belt survived and retained the power to grant the giants strength to the wearer.
 
-STATISTICS:
+STATISTICS: 
 
-Equipped ability:
- Increases Strength to 24
+Equipped abilities: 
+- Strength: Set to 24
+
 Weight: 2
 
 Unusable by:
@@ -31,19 +32,29 @@ Unusable by:
 
 
 @121 = ~Energy Bow~
-@123 = ~This bow has been imbued with great magical energy. Whenever the string is retracted a magic missle of energy is created that does pure magical damage to the target. When or how this item was created is unknown…but it has been used by many heroes over the ages.
+@123 = ~This bow has been imbued with great magical energy. Whenever the string is retracted a magic missile of energy is created that does pure magical damage to the target. When or how this item was created is unknown…but it has been used by many heroes over the ages.
 
-STATISTICS:
+STATISTICS: 
 
-Combat ability: 
- Does not require ammunition
-THAC0:  +4
-Damage: 3D4, +4 Magical Damage
-Weight: 6
+Equipped abilities: 
+- Attack per round: Set to 2
+
+Combat abilities: 
+- Requires no ammunition
+- Inflicts 3d4 magic damage to the target
+- Inflicts 4 magic damage to the target
+
+Enchantment: +4
+THAC0: +4
+Damage Type: Missile
 Speed Factor: 2
 Proficiency Type: Longbow
-Type: 2-handed
-Requires: 13 Strength
+Type: Two-Handed
+
+Weight: 6
+
+Requires: 
+- Strength: 13
 
 Not Usable By:
  Druid
@@ -55,19 +66,29 @@ Not Usable By:
 @131 = ~Longbow +3: Iron Bow~
 @133 = ~This bow was created eons ago by a group of martial wizards for their soldiers. This group not only trained their mages in the art of magic, but also trained them to use weapons. These bows were given to their army's commanders during the war against the northern barbarians to not only protect them from the cold, but to literally burn their enemies down. It is not known how many of these bows have survived the ages.
 
-STATISTICS:
+STATISTICS: 
 
-Combat Abilities:
- +50% Cold Resistance
- +50% Cold Damage Reduction
- Unlimited ammunition
-THACO: +3
-Damage: 1D6 +3, +2 Fire Damage
-Weight: 2
+Equipped abilities: 
+- Attack per round: Set to 2
+- Cold Resistance: -50 %
+- Magical Cold Resistance: -50 %
+
+Combat abilities: 
+- Requires no ammunition
+- Inflicts 2 fire damage to the target
+
+Enchantment: +3
+THAC0: +3
+Damage: 1d6 +3
+Damage Type: Missile
 Speed Factor: 4
-Proficiency Type: Sling
-Type:  2-handed
-Requires: 6 Strength
+Proficiency Type: Longbow
+Type: Two-Handed
+
+Weight: 2
+
+Requires: 
+- Strength: 6
 
 Only Usable by:
  Mage~
@@ -76,10 +97,11 @@ Only Usable by:
 @141 = ~Defense Bracers AC 2~
 @143 = ~These bracers are so ancient that most of their history is unknown. What is known is that they were recovered over a hundred years ago from the tomb of an ancient sorcerer. They have been worn by many an adventurer since being found and are considered to be a myth by most.
 
-STATISTICS:
+STATISTICS: 
 
-Equipped ability :
- Armor Class: 2
+Equipped abilities: 
+- Base Armor Class: 2
+
 Weight: 2
 
 Unusable by:
@@ -89,18 +111,25 @@ Unusable by:
 @151 = ~Dagger +3:  Backstabber~
 @153 = ~This dagger is very well made and has some magical enchantments placed upon it's black blade. It is also very well balanced and can be thrown easily. When thrown, it returns to its wielder's hand.  20% of the time the dagger will "miss" on purpose and boomerang to backstab the target before returning to the thrower's hand.
 
-STATISTICS:
+STATISTICS: 
 
-Combat Abilities:
- Returns to thrower's hand
- 20% chance target will receive a Backstab x3
-Damage: 1D4+3
-Damage Type: Piercing
-Weight: 1
+Combat abilities: 
+- Returns to the wielder's hand when thrown
+- Attack per round: Set to 3
+- 21 % chance to inflict 3d4 piercing damage to the target
+
+Enchantment: +3
+Damage: 1d4 +3
+Damage Type (Melee): Piercing
+Damage Type (Thrown): Piercing
 Speed Factor: 2
 Proficiency Type: Dagger
-Type: 1-handed
-Requires: 3 Strength
+Type: One-Handed
+
+Weight: 1
+
+Requires: 
+- Strength: 3
 
 Not Usable By:
  Cleric~
@@ -111,21 +140,32 @@ Not Usable By:
 After the hammer was recovered, it was once again placed in the care of the temple in Phlan. However, it was soon stolen by a petty thief who did not know what he was taking. It has been lost ever since.
 This artifact looks like an ordinary steel war hammer except that it glows with a vibrant blue color.
 
-STATISTICS:
+STATISTICS: 
 
-Special Abilities:
- Sunray Once a day
- Heal Twice a day
- Immunity to Arcanic Spells Levels 1 to 9
-THAC0: +5 
+Equipped abilities: 
+- Immunity to spells
+
+Charge abilities: 
+- Sunray (instant) (1x per day)
+- Heal (as a level 20 spellcaster) (2x per day)
+
+Combat abilities: 
+- Returns to the wielder's hand when thrown
+
+Enchantment: +5
+THAC0: +5
+Damage: 2d4 +6
+Damage Type (Melee): Crushing
+Damage Type (Thrown): Crushing
 Speed Factor: 1
-Damage: 2D4 +6 Melee and Throwing
- Return to thrower
-Damage Type: Crushing
-Weight: 4
 Proficiency Type: Warhammer
-Type: 1-handed
-Required: Strength 14 & Wisdom 17
+Type: One-Handed
+
+Weight: 4
+
+Requires: 
+- Strength: 14
+- Wisdom: 17
 
 Only usable by:
  Cleric of Good Alignment
@@ -139,35 +179,46 @@ Only usable by:
 @181 = ~Bastard Sword +3: Lydek's Sword~
 @183 = ~This sword is the last of the swords made by an ancient group of martial wizards for use by their commanders. These wizards were not only trained in the arcane arts but in battle as well. This blade grants the wielder a bonus to his intelligence, increased spellcasting speed, and he cannot be silenced. It also does additional magical damage whenever it strikes an opponent. This particular sword was used by one of the greatest commanders of the wizard army, Lydek Terisonen. It was rumored that it was stolen from his cabin after he retired and has been lost ever since.
 
-STATISTICS:
+STATISTICS: 
 
-Equipped Abilities:
- +2 INT Bonus
- Spellcasting Speed: -2
- Vocalize
-Damage: 2D4+3, +3 Magical Damage
-THACO: +3
+Equipped abilities: 
+- Casting time: -2
+- Intelligence: +2
+- Vocalize
+
+Combat abilities: 
+- Inflicts 3 magic damage to the target
+
+Enchantment: +3
+THAC0: +3
+Damage: 2d4 +3
 Damage Type: Slashing
-Weight: 5
 Speed Factor: 3
-Proficiency Type: Dagger
-Type: 1-handed
+Proficiency Type: Bastard Sword
+Type: One-Handed
+
+Weight: 5
 
 Only Usable By:
  Mage~
 
 
 @191 = ~Lydek's Mage Robe~
-@193 = ~This robe was created by an elven mage by the name of Lydek Terisonen. Lydek was extremely materialistic, greatly fearing that whenever he travelled he would somehow lose all of his wonderful magical trinkets. To combat this fear, he spent many long years researching how he might combine all of his favorite powers into one seemingly plain looking robe. After many years of research, and thousands of gold coins, he finally completed this robe. Unfortunately, only a month after it was completed, his house was robbed by a poor beggar just looking for something warm to wear.
+@193 = ~This robe was created by an elven mage by the name of Lydek Terisonen. Lydek was extremely materialistic, greatly fearing that whenever he traveled he would somehow lose all of his wonderful magical trinkets. To combat this fear, he spent many long years researching how he might combine all of his favorite powers into one seemingly plain looking robe. After many years of research, and thousands of gold coins, he finally completed this robe. Unfortunately, only a month after it was completed, his house was robbed by a poor beggar just looking for something warm to wear.
 
-STATISTICS:
+STATISTICS: 
 
-Equipped Abilities:
- Armor Class: 0
- Strength set to 18/00
- +5% Magic Resistance
- Spellcasting Speed: -3
-Wearer may cast extra spells as follows: Three extra 1st, two extra 2nd, and one extra of each level from 3rd-7th.
+Equipped abilities: 
+- Memorize an extra level 3, 4, 5, 6 and 7 wizard spell
+- Memorize 2 extra level 2 wizard spells
+- Memorize 3 extra level 1 wizard spells
+- Base Armor Class: 0
+- Casting time: -3
+- Strength: Set to 18
+- Exceptional Strength: Set to 100
+- Magic Resistance: +5 %
+
+Weight: 6
 
 Only Usable by:
  Mage~
@@ -177,21 +228,32 @@ Only Usable by:
 @203 = ~This sword has an eerie, dark blue glow about the blade. It has been used by many warriors, good and evil, to catch their opponents unaware. The blade seems to alter the light patterns in a 5' Radius of the wielder. This grants the user infravision as well as making them virtually undetectable to magical means. The blade can also make the wielder invisible a limited number of times a day by bending the light around the caster.
 This unique blade is very cold to the touch, delivering extra cold damage with every successful strike. There is also a chance that when struck, the target will be slowed by the numbing cold.
 
-STATISTICS:
+STATISTICS: 
 
-Equipped Abilities:
- Infravision
- Non-Detection
- Cast Invisibility 3x/day
- 20% chance target struck is slowed for 1 minute
+Equipped abilities: 
+- Non-detection
+- Infravision
+
+Charge abilities: 
+- Invisibility (instant) (3x per day)
+
+Combat abilities: 
+- Bonuses to hit and damage based on Strength do not apply to this weapon
+- Inflicts 3 magic cold damage to the target
+- 21 % chance of slowing the target for 1 turn
+
+Enchantment: +3
 THAC0: +3
-Damage: 1d8+3, +3 Cold Damage
+Damage: 1d8 +3
 Damage Type: Slashing
-Weight: 3
 Speed Factor: 2
-Proficiency: Scimitar/Wakizashi/Ninja-To
-Type: 1-handed
-Requires: 10 Strength
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Type: One-Handed
+
+Weight: 3
+
+Requires: 
+- Strength: 10
 
 Not Usable By:
  Cleric
@@ -206,7 +268,7 @@ Not Usable By:
 @221 = ~Ring of Vampire Protection~
 @223 = ~The first of these rings was commissioned by Sir Iconius Rathmor, a paladin of some reknown in the realms, to aid in the recovery of a holy artifact stolen by the agents of a powerful vampire. Of all the species of undead, Sir Rathmor feared the mind domination and life stealing powers of the vampire the most. As a result, he commissioned this ring to not only protect him from those powers, but to create weapons to rid the realms of the plague of vampirism. The mage that created the first ring decided that more should be made, seeing the potential for profit. However, this mage mysteriously disappeared after producing a limited number of these rings. It was later learned that the mage was killed by a vampire who learned that he was the one flooding the realms with these powerful items.
 
-Equiped Abilities:
+Equipped Abilities:
  Immune to Level Drain, Charm Person, Dire Charm, and Domination
  Creates wooden stakes upon command
 
@@ -219,16 +281,27 @@ Unusable by:
 
 STATISTICS:
 
-Special Abilities:
+Combat abilities: 
+- Requires no ammunition
  1. 1d4+2, +2 Fire damage
  2. 1d4+2, +2 Electrical damage
  3. 1d4+2, +2 Cold damage
  Note:  Do not equip normal bullets with this item
-Weight: 0
+ 
+Enchantment: +4
+THAC0: +4
+Damage: 1d4 +6
+Damage Type (Fire): Missile
+Damage Type (Electrical): Missile
+Damage Type (Cold): Missile
 Speed Factor: 2
 Proficiency Type: Sling
-Type: 1-handed
-Requires: 3 Strength
+Type: One-Handed
+
+Weight: 0
+
+Requires: 
+- Strength: 3
 
 Not Usable By:
  Kensai
@@ -238,17 +311,27 @@ Not Usable By:
 @241 = ~Sling +3 Trollkiller~
 @243 = ~The first of these slings was commissioned by settlers of the areas around the Trollmoors in the North. The settlers used these slings to easily deal with the many troll attacks from the moors. They are enchanted to create their own bullets that inflict extra fire damage. Once the area was settled and fortified, many of these slings were sold to adventurers that passed through the area.
 
-STATISTICS:
+STATISTICS: 
 
-Combat Ability: 
- Unlimited ammunition
+Equipped abilities: 
+- Attack per round: Set to 1
+
+Combat abilities: 
+- Requires no ammunition
+- Inflicts 2 fire damage to the target
+
+Enchantment: +3
 THAC0: +3
-Damage: 1d4+2, +2 Fire Damage
-Weight: 0
+Damage: 1d4 +5
+Damage Type: Missile
 Speed Factor: 3
 Proficiency Type: Sling
-Type: 1-handed
-Requires: 3 Strength
+Type: One-Handed
+
+Weight: 0
+
+Requires: 
+- Strength: 3
 
 Not Usable By:
  Kensai
@@ -258,12 +341,15 @@ Not Usable By:
 @251 = ~Silver Helmet +3~
 @253 = ~These helmets were used by adventurers by the name of the Silver Blades. They not only protect the wearer in combat but are able to create mirror images of the wearer a number of times every day. Not many of these helms have survived the ages, but rumors of the reemergence of the Silver Blades abound.  
 
-STATISTICS:
+STATISTICS: 
 
-Special Abilities:
-  Cast 'Mirror Image' 3x/day
- Armor Class Bonus:  +3
-Special:  Protects Against Critical Hits
+Equipped abilities: 
+- Protection against critical hits
+- Armor Class: 3 bonus
+
+Charge abilities: 
+- Mirror Image (instant) (3x per day)
+
 Weight: 2
 
 Not Usable By:
@@ -297,13 +383,18 @@ Not Usable By:
 @271 = ~Silver Plate Mail +3~
 @273 = ~These suits were used long ago by a group of adventureres by the name of the Silver Blades. Each suit was created of pure silver and constantly shines. Due to its unique construction and magical enhancements, all electrical damage is reflected back upon the attacker. Not many of these have survived the ages, but rumors abound about a resurgence of the Silver Blades in recent years.
 
-STATISTICS:
+STATISTICS: 
 
-Equiped Ability:
- Reflects all electrical damage back upon attacker
-Armor Class: -2
+Equipped abilities: 
+- Base Armor Class: -2
+- Armor Class: 3 bonus vs. piercing and missile attacks
+- Armor Class: 4 bonus vs. slashing attacks
+- Reflect the lightnings
+
 Weight: 50
-Requires: 12 Strength
+
+Requires: 
+- Strength: 15
 
 Not Usable By:
  Bard
@@ -315,13 +406,16 @@ Not Usable By:
 @281 = ~Silver Shield +3~
 @283 = ~This medium shield was one of the many shields used by a group of adventurers called the Silver Blades. Not only are there magical protections woven into the shield, but it is able to reflect gaze attacks such as those of a basilisk or beholder. Not many of these artifacts have survived the ages, but there are rumors of a resurgence of the Silver Blades organization.
 
-STATISTICS:
+STATISTICS: 
 
-Equiped Ability:
- Reflects gaze attacks
-Armor Class Bonus: -4
+Equipped abilities: 
+- Armor Class: 3 bonus
+- Reflect the spectator rays
+
 Weight: 7
-Requires: 12 Strength
+
+Requires: 
+- Strength: 12
 
 Not Usable By:
  Bard

@@ -20,7 +20,6 @@ PARAMÈTRES :
 
 Capacités d'équipement : 
 - Force : Passe à 24
-- Force exceptionnelle : Passe à 100
 
 Poids : 2
 
@@ -109,7 +108,7 @@ Inutilisable par :
 
 
 @151 = ~Dague +3 : Sournoise~
-@153 = ~Cette dague est fort bien forgée et a quelques enchantements magiques placés sur sa sombre lame. Elle est aussi très équilibrée et peut être lancée aisément. Si on la lance, elle revient dans la main de l'utilisateur. 20% du temps la dague s'"échappera" délibérément et effectuera une attaque sournoise à la cible avant de revenir dans la main du lanceur.
+@153 = ~Cette dague est fort bien forgée et a quelques enchantements magiques placés sur sa sombre lame. Elle est aussi très équilibrée et peut être lancée aisément. Si on la lance, elle revient dans la main de l'utilisateur. 20% du temps la dague s'« échappera » délibérément et effectuera une attaque sournoise sur la cible avant de revenir dans la main du lanceur.
 
 PARAMÈTRES : 
 
@@ -194,7 +193,7 @@ TAC0 : +3
 Dégâts : 2d4 +3
 Type de dégâts : Tranchant
 Facteur de vitesse : 3
-Type de compétence : Dague
+Type de compétence : Épée bâtarde
 Type : Arme à 1 main
 
 Poids : 5
@@ -287,12 +286,14 @@ Capacités de combat :
  1. 1D4+2, +2 Dégâts de feu
  2. 1D4+2, +2 Dégâts électriques
  3. 1D4+2, +2 Dégâts de froid
- Note: ne pas placer de billes normales avec cette arme
+ Note: ne pas utiliser de billes normales avec cette arme
  
 Enchantement : +4
 TAC0 : +4
 Dégâts : 1d4 +6
-Type de dégâts (à distance) : Projectile
+Type de dégâts (Feu) : Projectile
+Type de dégâts (Électricité) : Projectile
+Type de dégâts (Froid) : Projectile
 Facteur de vitesse : 2
 Type de compétence : Fronde
 Type : Arme à 1 main
@@ -411,7 +412,7 @@ PARAMÈTRES :
 
 Capacités d'équipement : 
 - Classe d'armure : Bonus de 3
-- Réfléchit les attaques de regard
+- Renvoie les rayons des spectateurs
 
 Poids : 7
 

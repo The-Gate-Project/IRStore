@@ -70,8 +70,8 @@ PARAMÈTRES :
 
 Capacités d'équipement : 
 - Attaque par round : Passe à 2
-- Résistance au froid : -50 %
-- Résistance aux dégâts de froid magiques : -50 %
+- Résistance au froid : +50 %
+- Résistance aux dégâts de froid magiques : +50 %
 
 Capacités de combat : 
 - Ne nécessite pas de munitions
@@ -277,23 +277,23 @@ Inutilisable par :
 
 
 @231 = ~Fronde des Éléments~
-@233 = ~Cette fronde fut créée par un puissant mage du nom de Lydek Terisonen. Cherchant un moyen de faire de la place pour ses divers composants de sorts, il créa cette fronde afin d'obtenir ses propres billes à volonté. Cette fronde peut lancer trois types différents de billes : feu, froid et électrique.
+@233 = ~Cette fronde fut créée par un puissant mage du nom de Lydek Terisonen. Cherchant un moyen de faire de la place pour ses divers composants de sorts, il créa cette fronde afin d'obtenir ses propres billes à volonté. Cette fronde peut lancer trois types différents de billes : équipée, froid électrique et feu acide.
 
 PARAMÈTRES :
 
 Capacités de combat : 
 - Ne nécessite pas de munitions
- 1. 1D4+2, +2 Dégâts de feu
- 2. 1D4+2, +2 Dégâts électriques
- 3. 1D4+2, +2 Dégâts de froid
+ 1. 1D4+6, +2 Dégâts perforants
+ 2. 1D4+6, +4 Dégâts de froid électrique
+ 3. 1D4+6, +4 Dégâts de feu acide
  Note: ne pas utiliser de billes normales avec cette arme
  
 Enchantement : +4
 TAC0 : +4
 Dégâts : 1d4 +6
-Type de dégâts (Feu) : Projectile
-Type de dégâts (Électricité) : Projectile
-Type de dégâts (Froid) : Projectile
+Type de dégâts (Bille équipée) : Projectile
+Type de dégâts (Bille de glace électrique) : Projectile
+Type de dégâts (Bille de feu acide) : Projectile
 Facteur de vitesse : 2
 Type de compétence : Fronde
 Type : Arme à 1 main
@@ -318,12 +318,14 @@ Capacités d'équipement :
 
 Capacités de combat : 
 - Ne nécessite pas de munitions
-- Inflige 2 points de dégâts de feu à la cible
+ 1. 1D4+5, +2 Dégâts perforants
+ 2. 1D4+5, +2 Dégâts de feu
 
 Enchantement : +3
 TAC0 : +3
 Dégâts : 1d4 +5
-Type de dégâts : Projectile
+Type de dégâts (Bille équipée) : Projectile
+Type de dégâts (Bille de feu) : Projectile
 Facteur de vitesse : 3
 Type de compétence : Fronde
 Type : Arme à 1 main
@@ -428,3 +430,28 @@ Inutilisable par :
 
 @291 = ~Étui d'archer~
 @293 = ~Ce petit étui est idéalement conçu pour contenir des munitions.~
+
+//Tooltip
+
+/*COPY ~IRStore/Items/IRSLNGEL.ITM~ ~override~
+SAY NAME1 @231
+SAY NAME2 @231
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@233" END
+    OUTER_SET ability1strref = RESOLVE_STR_REF (@300)
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@301)
+	OUTER_SET ability3strref = RESOLVE_STR_REF (@302)
+    APPEND ~tooltip.2da~ ~IRSLNGEL    %ability1strref%    %ability2strref%    %ability3strref%    -1~*/
+
+@300 = ~Bille de feu acide~
+@301 = ~Bille équipée~
+@302 = ~Bille de glace électrique~
+
+/*COPY ~IRStore/Items/IRSLNGTK.ITM~ ~override~
+SAY NAME1 @241
+SAY NAME2 @241
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@243" END
+    OUTER_SET ability1strref = RESOLVE_STR_REF (@303)
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@304)
+    APPEND ~tooltip.2da~ ~IRSLNGTK    %ability1strref%    %ability2strref%     -1~*/
+
+@303 = ~Bille de feu~

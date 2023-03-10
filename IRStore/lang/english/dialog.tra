@@ -70,8 +70,8 @@ STATISTICS:
 
 Equipped abilities: 
 - Attack per round: Set to 2
-- Cold Resistance: -50 %
-- Magical Cold Resistance: -50 %
+- Cold Resistance: +50 %
+- Magical Cold Resistance: +50 %
 
 Combat abilities: 
 - Requires no ammunition
@@ -277,23 +277,23 @@ Unusable by:
 
 
 @231 = ~Sling of the Elements~
-@233 = ~This sling was created by a powerful wizard by the name of Lydek Terisonen. Looking for a way to save room for his many spell components, he created this sling to create it's own bullets from thin air. This sling can hurl three different types of bullets: Fire, Cold, and Electric.
+@233 = ~This sling was created by a powerful wizard by the name of Lydek Terisonen. Looking for a way to save room for his many spell components, he created this sling to create it's own bullets from thin air. This sling can hurl three different types of bullets: Equipped, Electric ice, and Acid fire.
 
 STATISTICS:
 
 Combat abilities: 
 - Requires no ammunition
- 1. 1d4+2, +2 Fire damage
- 2. 1d4+2, +2 Electrical damage
- 3. 1d4+2, +2 Cold damage
+ 1. 1d4+2, +2 Missile Damage
+ 2. 1d4+2, +2 Electric ice damage
+ 3. 1d4+2, +2 Acid fire damage
  Note:  Do not equip normal bullets with this item
  
 Enchantment: +4
 THAC0: +4
 Damage: 1d4 +6
-Damage Type (Fire): Missile
-Damage Type (Electrical): Missile
-Damage Type (Cold): Missile
+Damage Type (equipped) : Missile
+Damage Type (Cold, Electrical): Missile
+Damage Type (fire, acid): Missile
 Speed Factor: 2
 Proficiency Type: Sling
 Type: One-Handed
@@ -318,12 +318,14 @@ Equipped abilities:
 
 Combat abilities: 
 - Requires no ammunition
-- Inflicts 2 fire damage to the target
+ 1. 1D4+5, +2 Missile Damage
+ 2. 1D4+5, +2 fire Damage
 
 Enchantment: +3
 THAC0: +3
 Damage: 1d4 +5
-Damage Type: Missile
+Damage Type (equipped) : Missile
+Damage Type (fire) : Missile
 Speed Factor: 3
 Proficiency Type: Sling
 Type: One-Handed
@@ -426,3 +428,28 @@ Not Usable By:
 
 @291 = ~Archer's Case~
 @293 = ~This small case is ideally suited for holding ranged ammo.~
+
+//Tooltip
+
+/*COPY ~IRStore/Items/IRSLNGEL.ITM~ ~override~
+SAY NAME1 @231
+SAY NAME2 @231
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@233" END
+    OUTER_SET ability1strref = RESOLVE_STR_REF (@300)
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@301)
+	OUTER_SET ability3strref = RESOLVE_STR_REF (@302)
+    APPEND ~tooltip.2da~ ~IRSLNGEL    %ability1strref%    %ability2strref%    %ability3strref%    -1~*/
+
+@300 = ~Bullet of acid fire~
+@301 = ~Equipped~
+@302 = ~Bullet of electric ice~
+
+/*COPY ~IRStore/Items/IRSLNGTK.ITM~ ~override~
+SAY NAME1 @241
+SAY NAME2 @241
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@243" END
+    OUTER_SET ability1strref = RESOLVE_STR_REF (@303)
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@304)
+    APPEND ~tooltip.2da~ ~IRSLNGTK    %ability1strref%    %ability2strref%     -1~*/
+
+@303 = ~Bullet of fire~

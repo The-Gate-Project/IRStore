@@ -147,11 +147,18 @@ COPY ~IRStore/Items/IRSLNGEL.ITM~ ~override~
 SAY NAME1 @231
 SAY NAME2 @231
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@233" END
+    OUTER_SET ability1strref = RESOLVE_STR_REF (@301)
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@302)
+	OUTER_SET ability3strref = RESOLVE_STR_REF (@300)
+    APPEND ~tooltip.2da~ ~IRSLNGEL    %ability1strref%    %ability2strref%    %ability3strref%    -1~
 
 COPY ~IRStore/Items/IRSLNGTK.ITM~ ~override~
 SAY NAME1 @241
 SAY NAME2 @241
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@243" END
+    OUTER_SET ability1strref = RESOLVE_STR_REF (@301)
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@303)
+    APPEND ~tooltip.2da~ ~IRSLNGTK    %ability1strref%    %ability2strref%     -1~
 
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 

@@ -1,11 +1,11 @@
-NATHAN MOD FOR BALDUR’S GATE 2 THRONE OF BHAAL, BALDUR'S GATE II ENHANCED EDITION AND ENHANCED EDITION TRILOGY - BY THEO DE MOREE - ADAPTED BY PROF ERRATA
+NATHAN MOD FOR BALDUR’S GATE 2 THRONE OF BHAAL, BALDUR'S GATE TRILOGY, BALDUR'S GATE II ENHANCED EDITION AND ENHANCED EDITION TRILOGY - BY THEO DE MOREE - ADAPTED BY PROF ERRATA
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Here a mod introducing a new merchant on the Waukeen Promenade, Nathan, which will give you in exchange for some gold coins rather effective and very useful items and weapons for BG2.
 
 Installation:
- - BG2ToB, with the last Bioware official patch 26498, or the GOG version which integrates them already.
+ - BG2ToB or BGT, with the last Bioware official patch 26498, or the GOG version which integrates them already.
 - BG2EE or EET
 
 Compatibility : 

@@ -15,6 +15,6 @@ END
 
 IF ~~ THEN BEGIN 2
   SAY @14
-=@15
+= @15
  IF ~~ THEN EXIT
 END

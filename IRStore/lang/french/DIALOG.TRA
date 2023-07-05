@@ -1,13 +1,13 @@
 @9001 	= ~[Uu]tilisable\([ %tab%]+[Ss]eulement\|[ %tab%]+[Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
 @9002	 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
 
-@10 = ~Salutations, je m'appelle Nathan. Je suis arrivé tout récemment de Valombre. Ce fut un long trajet, mais je voulais obtenir le plus de valeur que je le pourrais des objets que j'ai collecté.~
-@11 = ~Athkatla est réputée être la plus riche cité de tout Féérune, aussi je savais qu' il y aurait là des aventuriers avec les sommes d'or que je recherche. Aimeriez-vous jeter un regard sur mes marchandises ? J'ai amassé divers artefacts ici et là dans mes voyages dans les royaumes.~
+@10 = ~Salutations, je m'appelle Nathan. Je suis arrivé tout récemment de Valombre. Ce fut un long trajet, mais j'ai l'intention d'obtenir une coquette somme grâce aux objets que j'ai collecté.~
+@11 = ~Athkatla est réputée pour être la plus riche cité de tout Féérune, aussi je savais qu'il y aurait des aventuriers prêt à dépenser les quantités d'or que je recherche. Aimeriez-vous prendre le temps de regarder mes marchandises ? J'ai amassé divers artefacts, ici et là au cours de mes voyages dans les royaumes.~
 @12 = ~Montrez-les moi, s'il vous plaît.~
 @13 = ~Non merci, je ne fais que passer.~
 @14 = ~Comme vous voulez.~
 @15 = ~Revenez bientôt !~
-@20 = ~Mod Nathan (Necessite Throne of Bhaal ou BG2EE)~
+@20 = ~IRstore (Necessite ToB / BGT ou BG2EE / EET)~
 @21 = ~Nathan~
 @22 = ~Boutique de Nathan~
 

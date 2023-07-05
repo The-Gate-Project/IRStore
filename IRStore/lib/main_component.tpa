@@ -6,48 +6,46 @@
 
 SILENT
 
-/* ------------------------------------ *
- *  Setting default variables  *
- * ------------------------------------ */
-
-ACTION_IF GAME_IS ~tob~ BEGIN
-		OUTER_SPRINT pe_are "ar0700"
-		OUTER_SPRINT pe_sto "IRStore"
-END ELSE BEGIN
-		OUTER_SPRINT pe_are "ar0700"
-		OUTER_SPRINT pe_sto "IRStore"
-END
-
 /* ------------------------- *
  *  Installing stores  *
  * ------------------------- */
+ 
 
 COPY ~irstore/store~ ~override~       
-  	SAY NAME2 @22
+
+COPY ~IRStore/store/IRStore.STO~ ~override~       
+  SAY STORE_NAME @22
 
 /* --------------------------------------------------- *
  *  Installing Creature set		       *
  * --------------------------------------------------- */
 
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+
+COPY ~IRStore/portrait/EE/Nathan4M.bmp~ ~override~
+
+COPY ~IRStore/portrait/EE/Nathan4S.bmp~ ~override~
+
+END ELSE ACTION_IF GAME_IS ~tob bgt~ THEN BEGIN
+
 COPY ~IRStore/portrait/Nathan4M.bmp~ ~override~
 
 COPY ~IRStore/portrait/Nathan4S.bmp~ ~override~
 
+END
 
-ACTION_IF GAME_IS ~tob bg2ee eet~ THEN 
-BEGIN
 COPY ~irstore/creature/Nathan.cre~ ~override~
 	SAY NAME1 @21
 	SAY NAME2 @21
-END
 
 /* ----------------------------------------------- *
  *  Installing Scripts and Dialogues  *
  * ------------------------------------------------ */
 
-COMPILE EVALUATE_BUFFER ~irstore/dialogue/IRStore.d~
+EXTEND_BOTTOM ~ar0700.bcs~ ~IRStore/baf/IRStore.baf~
+    EVALUATE_BUFFER
 
-EXTEND_BOTTOM ~%pe_are%.bcs~ ~irstore/baf/IRStore.baf~
+COMPILE ~IRStore/dialogue/IRStore.d~
 
 /* ---------------------------------------------------- *
  *  Copy BAMs or convert them to EE  *

@@ -27,6 +27,22 @@ Versions :
 - V3 : version compatible avec BG2EE v2.6.6.0 et sous format WeiDU 249 - Janvier 2023
 - V4 : version corrigée - Janvier 2023
 
+- v2.0  
+	- Code revision   
+	- Prefixes  
+	- Bam  
+	- Store price revision  
+	- Correction for ITEMS
+	- Portraits for EE
+	- Header revision for ranged weapons
+	- Expand PEIRSto.d for take account of first meeting
+	- Multiple choice at installation for a game more balanced but still unbalanced
+	- Second component Items Errata (cosmetic change for two items) 
+	- Corrections for Items Errata (had incorrect effects or no effects at all)
+	- Missing accurate description for Items Errata
+	- Add InfinityAutoPackager
+	- Add metadata and label for Project Infinity
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Contact : 

@@ -8,11 +8,25 @@
 BACKUP ~IRStore/backup~
 AUTHOR ~Theo de Moree - Updated by Prof Errata~
 
-VERSION ~~
+VERSION ~2.0~
 
 README ~IRStore/readme/Nathan_%LANGUAGE%.txt~
 
+AUTO_EVAL_STRINGS
+
 ALWAYS	
+
+ACTION_IF GAME_IS ~eet~ BEGIN
+			OUTER_SET bg2_chapter = 12
+		END ELSE BEGIN
+			OUTER_SET bg2_chapter = 0
+		END
+		OUTER_FOR (i = 1 ; i <= 10 ; ++i) BEGIN
+			OUTER_SET bg2_chapter = bg2_chapter + 1
+			OUTER_SPRINT name_source ~bg2_chapter_%i%~
+			OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+		END
+		
 
 			//Copies tra files into the autotra-folder (to leave the originals untouched)
     DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
@@ -57,8 +71,167 @@ LANGUAGE ~Francais (par Prof Errata)~
  *   Nathan: Main component   	        *
  * ========================== */
 
+
+// Original
+
 BEGIN @0
-DESIGNATED 0 LABEL ~IRStore-Theo-de-Moree~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  // ~This mod requires BG2ToB / BGT or BG2EE / EET to be installed.~
+DESIGNATED 0 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+	PRINT ~Original component~
+
+COMPILE EVALUATE_BUFFER ~IRStore/dialogue/PEIRSto.d~   // IRstore cre PEIRSto dlg PEIRSto
+
+EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/IRAR0700.baf~ // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+  
+	INCLUDE ~IRStore/lib/main_component.tpa~
+
+
+// Delayed
+
+
+BEGIN @2 
+DESIGNATED 2 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree-Delayed~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+	PRINT ~Delayed component~
+
+COMPILE EVALUATE_BUFFER ~IRStore/dialogue/Delayed/PEIRSto.d~   // IRstore cre PEIRSto dlg PEIRSto
+
+EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/IRAR0700.baf~ // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+
+COPY ~IRStore/store/PEIRSTO2.STO~ ~override~    // IRStore2
+  SAY STORE_NAME @22
+  	
+	INCLUDE ~IRStore/lib/main_component.tpa~
+
+
+// Nathan in ToB + Delayed
+
+
+BEGIN @3 
+DESIGNATED 3 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree-DelayedToB~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+	PRINT ~Nathan in ToB + Delayed component~
+
+COMPILE EVALUATE_BUFFER ~IRStore/dialogue/Delayed/PEIRSto.d~   // IRstore cre PEIRSto dlg PEIRSto
+
+COPY ~IRStore/store/PEIRSTO2.STO~ ~override~    // IRStore2 
+  SAY STORE_NAME @22
+
+EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/IRAR0700.baf~ // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+  
+EXTEND_BOTTOM ~AR5000.bcs~ ~IRStore/baf/JoIrAR5000.baf~  // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+  
+EXTEND_BOTTOM ~AR6400.bcs~ ~IRStore/baf/JoIrAR6400.baf~  // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+	
+	INCLUDE ~IRStore/lib/main_component.tpa~
+
+
+// Nathan in ToB Only
+
+
+BEGIN @4 
+DESIGNATED 4 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree-ToBOnly~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+	PRINT ~Nathan in ToB Only component~
+
+COMPILE EVALUATE_BUFFER ~IRStore/dialogue/Delayed/PEIRSto.d~   // IRstore cre PEIRSto dlg PEIRSto
+
+EXTEND_BOTTOM ~AR5000.bcs~ ~IRStore/baf/JoIrAR5000.baf~  // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+  
+EXTEND_BOTTOM ~AR6400.bcs~ ~IRStore/baf/JoIrAR6400.baf~  // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+	
+	INCLUDE ~IRStore/lib/main_component.tpa~
+
+
+// Nathan in ToB + Original
+
+
+BEGIN @5 
+DESIGNATED 5 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree-OriginalToB~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+	PRINT ~Nathan in ToB + Original component~
+
+COMPILE EVALUATE_BUFFER ~IRStore/dialogue/PEIRSto.d~   // IRstore cre PEIRSto dlg PEIRSto
+
+EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/IRAR0700.baf~ // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+
+EXTEND_BOTTOM ~AR5000.bcs~ ~IRStore/baf/JoIrAR5000.baf~  // cre nathan to PEIRSto
+    EVALUATE_BUFFER
+  
+EXTEND_BOTTOM ~AR6400.bcs~ ~IRStore/baf/JoIrAR6400.baf~  // cre nathan to PEIRSto
+    EVALUATE_BUFFER
 
 	INCLUDE ~IRStore/lib/main_component.tpa~
+
+
+// Items Errata
+
+
+BEGIN @6 
+DESIGNATED 6 LABEL ~IRStore-Theo-de-Moree-Errata~
+REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~PEIRSto.sto~) @7 /* "Items Errata" need one of the first componants to be installed */
+	PRINT ~Items Errata for PEIRSto~
+
+COPY ~IRStore/Errata/PEIRERBA.ITM~ ~override~
+SAY NAME1 @500
+SAY NAME2 @500
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@501" END
+PRINT ~Errata Staff~
+
+COPY ~IRStore/Errata/PEIRERSL.ITM~ ~override~
+SAY NAME1 @502
+SAY NAME2 @502
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@503" END
+PRINT ~Errata Sling~
+
+COPY_EXISTING ~PEIRSTO.STO~ ~override~  // Change items IRStore
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRMASW~
+    END // Remove PEIRMASW.ITM (Lydek's Sword)
+	
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBOW2~
+    END // Remove PEIRBOW2.ITM (Iron Bow)
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRERBA~ position=~AFTER PEIRSLN2~ flags=~identified~
+    END // Replace PEIRERBA.ITM (Lydek's Staff)
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRERSL~ position=~AFTER PEIRBOW1~ flags=~identified~
+    END // Replace PEIRERSL.ITM (Iron Sling)
+PRINT ~PEIRSTO.sto patched~
+	
+
+ACTION_IF (MOD_IS_INSTALLED ~SETUP-IRStore.TP2~ ~2~ OR MOD_IS_INSTALLED ~SETUP-IRStore.TP2~ ~3~) BEGIN
+	PRINT ~Items Errata for PEIRSTO2~
+
+COPY_EXISTING ~PEIRSTO2.STO~ ~override~  // Change items IRStore
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRMASW~
+    END // Remove PEIRMASW.ITM (Lydek's Sword)
+	
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBOW2~
+    END // Remove PEIRBOW2.ITM (Iron Bow)
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRERBA~ position=~AFTER PEIRSLN2~ flags=~identified~
+    END // Replace PEIRERBA.ITM (Lydek's Staff)
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRERSL~ position=~AFTER PEIRNIGH~ flags=~identified~
+    END // Replace PEIRERSL.ITM (Iron Sling)
+PRINT ~PEIRSTO2.sto patched~
+	
+ END

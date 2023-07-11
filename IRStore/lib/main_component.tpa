@@ -11,9 +11,16 @@ SILENT
  * ------------------------- */
  
 
-COPY ~irstore/store~ ~override~       
+COPY ~irstore/store/PEIRAMMO.STO~ ~override~   
+SAY STORE_NAME @603   // Name display inside container / shop
+COPY ~irstore/store/PEIRBOOK.STO~ ~override~  
+SAY STORE_NAME @600
+COPY ~irstore/store/PEIRKEY.STO~ ~override~    
+SAY STORE_NAME @601
+COPY ~irstore/store/PEIRPOTN.STO~ ~override~  
+SAY STORE_NAME @602   
 
-COPY ~IRStore/store/IRStore.STO~ ~override~       
+COPY ~IRStore/store/PEIRSTO.STO~ ~override~    // IRStore
   SAY STORE_NAME @22
 
 /* --------------------------------------------------- *
@@ -22,30 +29,22 @@ COPY ~IRStore/store/IRStore.STO~ ~override~
 
 ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
 
-COPY ~IRStore/portrait/EE/Nathan4M.bmp~ ~override~
+COPY ~IRStore/portrait/EE/PEIRStoM.bmp~ ~override~ // Nathan4M cre Nathan4M to PEIRStoM
 
-COPY ~IRStore/portrait/EE/Nathan4S.bmp~ ~override~
+COPY ~IRStore/portrait/EE/PEIRStoS.bmp~ ~override~ // Nathan4s cre Nathan4s to PEIRStoM
 
 END ELSE ACTION_IF GAME_IS ~tob bgt~ THEN BEGIN
 
-COPY ~IRStore/portrait/Nathan4M.bmp~ ~override~
+COPY ~IRStore/portrait/PEIRStoM.bmp~ ~override~ // Nathan4M cre Nathan4M to PEIRStoM
 
-COPY ~IRStore/portrait/Nathan4S.bmp~ ~override~
+COPY ~IRStore/portrait/PEIRStoS.bmp~ ~override~ // Nathan4s cre Nathan4s to PEIRStos
 
 END
 
-COPY ~irstore/creature/Nathan.cre~ ~override~
+COPY ~irstore/creature/PEIRSto.cre~ ~override~  // Nathan dlg IRStore to PEIRSto
 	SAY NAME1 @21
 	SAY NAME2 @21
 
-/* ----------------------------------------------- *
- *  Installing Scripts and Dialogues  *
- * ------------------------------------------------ */
-
-EXTEND_BOTTOM ~ar0700.bcs~ ~IRStore/baf/IRStore.baf~
-    EVALUATE_BUFFER
-
-COMPILE ~IRStore/dialogue/IRStore.d~
 
 /* ---------------------------------------------------- *
  *  Copy BAMs or convert them to EE  *
@@ -53,7 +52,7 @@ COMPILE ~IRStore/dialogue/IRStore.d~
 
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 	INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~			// Loads function converting inventory BAMs to EE.
-	OUTER_SPRINT file-exc ~ENARROW ~	// Special cases: unused inventory or description icons, and ability .bam don't need to be converted.
+	OUTER_SPRINT file-exc ~PEIRBOW1 PEIRSL1H PEIRSL1S PEIRSL1B PEIRBOP1 PEIRMARO~	// Special cases: unused inventory or description icons, and ability .bam don't need to be converted.
 	ACTION_BASH_FOR ~IRStore/bam/~ ~^.+\.bam$~ BEGIN
 		ACTION_TO_LOWER %BASH_FOR_FILE%
 		ACTION_TO_LOWER %BASH_FOR_RES%
@@ -73,123 +72,180 @@ END
  *  Installing Items  *
  * ------------------------ */
 
-ADD_PROJECTILE ~IRStore/pro/ARROWEN.PRO~
+ADD_PROJECTILE ~IRStore/pro/PEIRBOP1.PRO~ //////////////////DONE  // itm IRBOWENE pro ARROWEN bam ENARROW
 
 
-COPY ~IRStore/Items/IRBELTGS.ITM~ ~override~
+COPY ~IRStore/Items/PEIRBELT.ITM~ ~override~ //////////////////DONE  // IRBELTGS Jaycen's Folly
 SAY NAME1 @101
 SAY NAME2 @101
+SAY UNIDENTIFIED_DESC #6466
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@103" END
 
-COPY ~IRStore/Items/IRBOOKCS.ITM~ ~override~
+COPY ~IRStore/Items/PEIRBOOK.ITM~ ~override~ //////////////////DONE  // IRBOOKCS Book Case // sto IRBOOKCS to PEIRBOOK
 SAY NAME1 @111
 SAY NAME2 @111
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@113" END
 
-COPY ~IRStore/Items/IRBOWENE.ITM~ ~override~
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+
+COPY ~IRStore/Items/PEIRBOW1.ITM~ ~override~ //////////////////DONE  // IRBOWENE Energy Bow
 SAY NAME1 @121
 SAY NAME2 @121
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@123" END
+  WRITE_LONG 0x34 10200 // Store price
+  WRITE_SHORT 0x09c ~%PEIRBOP1%~  // Write projectile to item
 
-COPY ~IRStore/Items/IRBOWIRN.ITM~ ~override~
+END ELSE BEGIN
+
+COPY ~IRStore/itemsOld/PEIRBOW1.ITM~ ~override~ //////////////////DONE  // IRBOWENE Energy Bow
+SAY NAME1 @121
+SAY NAME2 @121
+LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@123" END
+  WRITE_LONG 0x34 10200 // Store price
+  WRITE_SHORT 0x09c ~%PEIRBOP1%~  // Write projectile to item
+  
+END
+
+COPY ~IRStore/Items/PEIRBOW2.ITM~ ~override~ // Arc / Sling // IRBOWIRN Iron Bow   // icone change and desc
 SAY NAME1 @131
 SAY NAME2 @131
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@133" END
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@303)
+    APPEND ~tooltip.2da~ ~PEIRBOW2    -1    %ability2strref%~
 
-COPY ~IRStore/Items/IRBRAC02.ITM~ ~override~
+COPY ~IRStore/Items/PEIRBRAC.ITM~ ~override~ //////////////////DONE  // IRBRAC02 Defense Bracers AC 2
 SAY NAME1 @141
 SAY NAME2 @141
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@143" END
 
-COPY ~IRStore/Items/IRBSDAGG.ITM~ ~override~
+COPY ~IRStore/Items/PEIRDAGG.ITM~ ~override~ //////////////////DONE  // IRBSDAGG Dagger +3:  Backstabber
 SAY NAME1 @151
 SAY NAME2 @151
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@153" END
+  WRITE_LONG 0x34 6600 // Store price
+    OUTER_SET ability1strref = RESOLVE_STR_REF (@410)
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@411)
+    APPEND ~tooltip.2da~ ~PEIRDAGG    %ability1strref%    %ability2strref%~
 
-COPY ~IRStore/Items/IRHAMTYR.ITM~ ~override~
+COPY ~IRStore/Items/PEIRTYR.ITM~ ~override~ //////////////////DONE  // IRHAMTYR Hammer of Tyr +5
 SAY NAME1 @161
 SAY NAME2 @161
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@163" END
 
-COPY ~IRStore/Items/IRKEYCS.ITM~ ~override~
+COPY ~IRStore/Items/PEIRKEY.ITM~ ~override~ //////////////////DONE  // IRKEYCS Key Ring // sto IRKEYCS to PEIRKEY
 SAY NAME1 @171
 SAY NAME2 @171
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@173" END
 
-COPY ~IRStore/Items/IRMAGLSW.ITM~ ~override~
+COPY ~IRStore/Items/PEIRMASW.ITM~ ~override~ //////////////////DONE  // DAGGGER / Bastard sword //  IRMAGLSW Lydek's Sword
 SAY NAME1 @181
 SAY NAME2 @181
+SAY UNIDENTIFIED_DESC #6720
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@183" END
 
-COPY ~IRStore/Items/IRMAGROB.ITM~ ~override~
+COPY ~IRStore/Items/PEIRMARO.ITM~ ~override~ //////////////////DONE  //  IRMAGROB Lydek's Mage Robe   
 SAY NAME1 @191
 SAY NAME2 @191
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@193" END
 
-COPY ~IRStore/Items/IRNGHTSC.ITM~ ~override~
+ACTION_IF GAME_IS ~bg2 bgt~ BEGIN
+
+COPY ~IRStore/itemsOld/PEIRMARO.BAM~ ~override~ //////////////////DONE  // BAM vanilla for Lydek's Mage Robe
+
+ END
+
+COPY ~IRStore/Items/PEIRNIGH.ITM~ ~override~ //////////////////DONE  //  IRNGHTSC Scimitar +3: Night Blade
 SAY NAME1 @201
 SAY NAME2 @201
+SAY UNIDENTIFIED_DESC #22712
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@203" END
 
-COPY ~IRStore/Items/IRPOTNCS.ITM~ ~override~
+COPY ~IRStore/Items/PEIRPOTN.ITM~ ~override~ //////////////////DONE  //  IRPOTNCS Potion bag // sto IRPOTNCS to PEIRPOTN
 SAY NAME1 @211
 SAY NAME2 @211
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@213" END
 
-COPY ~IRStore/Items/IRRINGVP.ITM~ ~override~
+COPY ~IRStore/Items/PEIRRING.ITM~ ~override~ //////////////////DONE  // IRRINGVP Ring of Vampire Protection
 SAY NAME1 @221
 SAY NAME2 @221
+SAY UNIDENTIFIED_DESC #17054
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@223" END
 
-COPY ~IRStore/Items/IRSLNGEL.ITM~ ~override~
+COPY ~IRStore/Items/PEIRSLN1.ITM~ ~override~ //////////////////DONE  //  IRSLNGEL Sling of the Elements
 SAY NAME1 @231
 SAY NAME2 @231
+SAY UNIDENTIFIED_DESC #6650
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@233" END
     OUTER_SET ability1strref = RESOLVE_STR_REF (@301)
     OUTER_SET ability2strref = RESOLVE_STR_REF (@302)
 	OUTER_SET ability3strref = RESOLVE_STR_REF (@300)
-    APPEND ~tooltip.2da~ ~IRSLNGEL    %ability1strref%    %ability2strref%    %ability3strref%    -1~
+    APPEND ~tooltip.2da~ ~PEIRSLN1    %ability1strref%    %ability2strref%    %ability3strref%~
 
-COPY ~IRStore/Items/IRSLNGTK.ITM~ ~override~
+COPY ~IRStore/Items/PEIRSLN2.ITM~ ~override~ //////////////////DONE  // IRSLNGTK Sling +3 Trollkiller
 SAY NAME1 @241
 SAY NAME2 @241
+SAY UNIDENTIFIED_DESC #6650
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@243" END
-    OUTER_SET ability1strref = RESOLVE_STR_REF (@301)
-    OUTER_SET ability2strref = RESOLVE_STR_REF (@303)
-    APPEND ~tooltip.2da~ ~IRSLNGTK    %ability1strref%    %ability2strref%     -1~
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@301)
+    APPEND ~tooltip.2da~ ~PEIRSLN2    -1    %ability2strref%~
 
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 
-COPY ~IRStore/Items/IRSLVHLM.ITM~ ~override~
+COPY ~IRStore/Items/PEIRSL1H.ITM~ ~override~ //////////////////DONE  // IRSLVHLM Silver Helmet +3
 SAY NAME1 @251
 SAY NAME2 @251
+SAY UNIDENTIFIED_DESC #6807
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@253" END
+  WRITE_LONG 0x34 12004 // Store price
 
 END ELSE BEGIN
 
-COPY ~IRStore/itemsOld/IRSLVHLM.ITM~ ~override~
+COPY ~IRStore/itemsOld/PEIRSL1H.ITM~ ~override~ //////////////////DONE  // BAM vanilla IRSLVHLM  Silver Helmet +3
 SAY NAME1 @251
 SAY NAME2 @251
+SAY UNIDENTIFIED_DESC #6807
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@253" END
+  WRITE_LONG 0x34 12004 // Store price
+
+COPY ~IRStore/itemsOld/PEIRSL1H.BAM~ ~override~ //////////////////DONE  // IRSLVHLM  BAM BG2
 
 END
 
-COPY ~IRStore/Items/IRSLVLSW.ITM~ ~override~
+COPY ~IRStore/Items/PEIRSL1S.ITM~ ~override~ //////////////////DONE  // IRSLVLSW Silver Long Sword +3
 SAY NAME1 @261
 SAY NAME2 @261
+SAY UNIDENTIFIED_DESC #6738
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@263" END
 
-COPY ~IRStore/Items/IRSLVPLT.ITM~ ~override~
+COPY ~IRStore/Items/PEIRSL1P.ITM~ ~override~ //////////////////DONE  // IRSLVPLT Silver Plate Mail +3
 SAY NAME1 @271
 SAY NAME2 @271
+SAY UNIDENTIFIED_DESC #6683
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@273" END
 
-COPY ~IRStore/Items/IRSLVSHL.ITM~ ~override~
+COPY ~IRStore/Items/PEIRSL1B.ITM~ ~override~ //////////////////DONE  // IRSLVSHL Silver Shield +3
 SAY NAME1 @281
 SAY NAME2 @281
+SAY UNIDENTIFIED_DESC #6819
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@283" END
 
-COPY ~IRStore/Items/IRAMMOCS.ITM~ ~override~
+COPY ~IRStore/Items/PEIRAMMO.ITM~ ~override~ //////////////////DONE  // IRAMMOCS Archer's Case // sto IRAMMOCS to PEIRAMMO
 SAY NAME1 @291
 SAY NAME2 @291
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@293" END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~PEIRSTO.sto~) BEGIN
+	PRINT ~Replace PEIRTYR (Hammer of Tyr) to store PEIRSTO~
+
+COPY_EXISTING ~PEIRSTO.STO~ ~override~  // Change items IRStore
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRTYR~
+    END // Remove PEIRTYR (Hammer of Tyr)
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRTYR~ position=~BEFORE PEIRSL1P~ flags=~identified~
+    END // Replace PEIRTYR (Hammer of Tyr)
+	
+ END
+ 

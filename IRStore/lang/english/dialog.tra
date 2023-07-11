@@ -63,8 +63,8 @@ Not Usable By:
  Thief~
 
 
-@131 = ~Longbow +3: Iron Bow~
-@133 = ~This bow was created eons ago by a group of martial wizards for their soldiers. This group not only trained their mages in the art of magic, but also trained them to use weapons. These bows were given to their army's commanders during the war against the northern barbarians to not only protect them from the cold, but to literally burn their enemies down. It is not known how many of these bows have survived the ages.
+@131 = ~Iron Bow~
+@133 = ~This unusual bow allows a magician skilled with slings to use it without penalty, he was created eons ago by a group of martial wizards for their soldiers. This group not only trained their mages in the art of magic, but also trained them to use weapons. These bows were given to their army's commanders during the war against the northern barbarians to not only protect them from the cold, but to literally burn their enemies down. It is not known how many of these bows have survived the ages.
 
 STATISTICS: 
 
@@ -82,7 +82,7 @@ THAC0: +3
 Damage: 1d6 +3
 Damage Type: Missile
 Speed Factor: 4
-Proficiency Type: Longbow
+Proficiency Type: Sling
 Type: Two-Handed
 
 Weight: 2
@@ -176,8 +176,8 @@ Only usable by:
 @173 = ~This ring is designed to keep keys organized.~
 
 
-@181 = ~Bastard Sword +3: Lydek's Sword~
-@183 = ~This sword is the last of the swords made by an ancient group of martial wizards for use by their commanders. These wizards were not only trained in the arcane arts but in battle as well. This blade grants the wielder a bonus to his intelligence, increased spellcasting speed, and he cannot be silenced. It also does additional magical damage whenever it strikes an opponent. This particular sword was used by one of the greatest commanders of the wizard army, Lydek Terisonen. It was rumored that it was stolen from his cabin after he retired and has been lost ever since.
+@181 = ~Lydek's Sword~
+@183 = ~This dagger much longer and larger than usual is the last of the swords made by an ancient group of martial wizards for use by their commanders. These wizards were not only trained in the arcane arts but in battle as well. This blade grants the wielder a bonus to his intelligence, increased spellcasting speed, and he cannot be silenced. It also does additional magical damage whenever it strikes an opponent. This particular dagger was used by one of the greatest commanders of the wizard army, Lydek Terisonen. It was rumored that it was stolen from his cabin after he retired and has been lost ever since.
 
 STATISTICS: 
 
@@ -194,7 +194,7 @@ THAC0: +3
 Damage: 2d4 +3
 Damage Type: Slashing
 Speed Factor: 3
-Proficiency Type: Bastard Sword
+Proficiency Type: Dagger
 Type: One-Handed
 
 Weight: 5
@@ -429,27 +429,86 @@ Not Usable By:
 @291 = ~Archer's Case~
 @293 = ~This small case is ideally suited for holding ranged ammo.~
 
-//Tooltip
 
-/*COPY ~IRStore/Items/IRSLNGEL.ITM~ ~override~
-SAY NAME1 @231
-SAY NAME2 @231
-LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@233" END
-    OUTER_SET ability1strref = RESOLVE_STR_REF (@300)
-    OUTER_SET ability2strref = RESOLVE_STR_REF (@301)
-	OUTER_SET ability3strref = RESOLVE_STR_REF (@302)
-    APPEND ~tooltip.2da~ ~IRSLNGEL    %ability1strref%    %ability2strref%    %ability3strref%    -1~*/
+// JO 2.0
 
-@300 = ~Bullet of acid fire~
-@301 = ~Equipped~
-@302 = ~Bullet of electric ice~
+// Tooltip
 
-/*COPY ~IRStore/Items/IRSLNGTK.ITM~ ~override~
-SAY NAME1 @241
-SAY NAME2 @241
-LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@243" END
-    OUTER_SET ability1strref = RESOLVE_STR_REF (@303)
-    OUTER_SET ability2strref = RESOLVE_STR_REF (@304)
-    APPEND ~tooltip.2da~ ~IRSLNGTK    %ability1strref%    %ability2strref%     -1~*/
+@300 = ~Frost bullet~
+@301 = ~Fire bullet~
+@302 = ~Electrical bullet~
+@303 = ~Flaming arrow~
+	
+@400 = ~Would you like to take a look at my wares?~
 
-@303 = ~Bullet of fire~
+@401 = ~Delighted to see you again!~	
+
+@402 = ~What insanity!~		
+
+@410 = ~Melee~	
+
+@411 = ~Backstabber~	
+
+
+// Errata
+
+@500 = ~Staff +3: Lydek's Staff~
+@501 = ~This staff is the last of the swords made by an ancient group of martial wizards for use by their commanders. These wizards were not only trained in the arcane arts but in battle as well. This staff grants the wielder a bonus to his intelligence, increased spellcasting speed, and he cannot be silenced. It also does additional magical damage whenever it strikes an opponent. This particular staff was used by one of the greatest commanders of the wizard army, Lydek Terisonen. It was rumored that it was stolen from his cabin after he retired and has been lost ever since.
+
+STATISTICS: 
+
+Equipped abilities: 
+- Casting time: -2
+- Intelligence: +2
+- Vocalize
+
+Combat abilities: 
+- Inflicts 3 magic damage to the target
+
+Enchantment: +3
+THAC0: +3
+Damage: 2d4 +3
+Damage Type: Slashing
+Speed Factor: 3
+Proficiency Type: Staff
+Type: One-Handed
+
+Weight: 5
+
+Only Usable By:
+ Mage~
+
+@502 = ~Sling +3: Iron Sling~
+@503 = ~This sling was created eons ago by a group of martial wizards for their soldiers. This group not only trained their mages in the art of magic, but also trained them to use weapons. These slings were given to their army's commanders during the war against the northern barbarians to not only protect them from the cold, but to literally burn their enemies down. It is not known how many of these slings have survived the ages.
+
+STATISTICS: 
+
+Equipped abilities: 
+- Attack per round: Set to 2
+- Cold Resistance: +50 %
+- Magical Cold Resistance: +50 %
+
+Combat abilities: 
+- Requires no ammunition
+- Inflicts 2 fire damage to the target
+
+Enchantment: +3
+THAC0: +3
+Damage: 1d6 +3
+Damage Type: Missile
+Speed Factor: 4
+Proficiency Type: Sling
+Type: Two-Handed
+
+Weight: 2
+
+Requires: 
+- Strength: 6
+
+Only Usable by:
+ Mage~
+ 
+@600 = ~<CHARNAME> Book Case~
+@601 = ~<CHARNAME> Key Ring~
+@602 = ~<CHARNAME> Potion bag~
+@603 = ~<CHARNAME> Archer's Case~

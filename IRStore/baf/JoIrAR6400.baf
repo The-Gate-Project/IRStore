@@ -1,0 +1,8 @@
+IF
+	Global("PEIRTob2Exists","GLOBAL",0)
+	!Dead("PEIRSto")
+THEN
+	RESPONSE #100
+		SetGlobal("PEIRTob2Exists","GLOBAL",1)
+		CreateCreature("PEIRSto",[269.276],15) 
+END

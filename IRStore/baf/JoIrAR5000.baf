@@ -1,0 +1,16 @@
+IF
+	Global("PEIRTobExists","GLOBAL",0)
+	!Dead("PEIRSto")
+THEN
+	RESPONSE #100
+		SetGlobal("PEIRTobExists","GLOBAL",1)
+		CreateCreature("PEIRSto",[2075.1220],15) 
+END
+
+IF
+	Global("PEIRTob2Exists","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("PEIRSto",EscapeArea())
+END
+

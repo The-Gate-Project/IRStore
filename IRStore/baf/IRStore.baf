@@ -1,7 +1,0 @@
-IF
-	Global("NathanExists","AR0700",0)
-THEN
-	RESPONSE #100
-		SetGlobal("NathanExists","AR0700",1)
-		CreateCreature("Nathan",[2075.1220],15) 
-END

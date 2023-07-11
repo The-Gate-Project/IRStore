@@ -1,0 +1,22 @@
+IF
+	Global("PEIRNathan","AR0700",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PEIRNathan","AR0700",1)
+		CreateCreature("PEIRSto",[2075.1220],15) 
+END
+
+IF
+	Global("PEIRTobExists","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("PEIRSto",EscapeArea())
+END
+
+
+IF
+	Global("PEIRTob2Exists","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("PEIRSto",EscapeArea())
+END

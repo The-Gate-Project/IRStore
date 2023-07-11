@@ -3,6 +3,7 @@
 
 @10 = ~Salutations, je m'appelle Nathan. Je suis arrivé tout récemment de Valombre. Ce fut un long trajet, mais j'ai l'intention d'obtenir une coquette somme grâce aux objets que j'ai collecté.~
 @11 = ~Athkatla est réputée pour être la plus riche cité de tout Féérune, aussi je savais qu'il y aurait des aventuriers prêt à dépenser les quantités d'or que je recherche. Aimeriez-vous prendre le temps de regarder mes marchandises ? J'ai amassé divers artefacts, ici et là au cours de mes voyages dans les royaumes.~
+
 @12 = ~Montrez-les moi, s'il vous plaît.~
 @13 = ~Non merci, je ne fais que passer.~
 @14 = ~Comme vous voulez.~
@@ -63,8 +64,8 @@ Inutilisable par :
  Voleur~
 
 
-@131 = ~Arc long +3 : Arc de Fer~
-@133 = ~Cet arc fut créé il y a longtemps de cela par un groupe de mages guerriers pour leurs soldats. Ledit groupe non seulement entraînait ses mages dans l'art de la magie, mais aussi à utiliser des armes. Ces arcs furent remis aux commandants de leur armée durant la guerre contre les barbares nordiques non seulement pour les protéger du froid, mais aussi pour incendier littéralement leurs ennemis. On ne sait pas combien de ces arcs ont survécu au temps.
+@131 = ~Arc de Fer~
+@133 = ~Cet arc inhabituel permet au mage compétent avec la fronde de l'utiliser sans pénalités, il fut créé il y a longtemps de cela par un groupe de mages guerriers pour leurs soldats. Ledit groupe non seulement entraînait ses mages dans l'art de la magie, mais aussi à utiliser des armes. Ces arcs furent remis aux commandants de leur armée durant la guerre contre les barbares nordiques non seulement pour les protéger du froid, mais aussi pour incendier littéralement leurs ennemis. On ne sait pas combien de ces arcs ont survécu au temps.
 
 PARAMÈTRES : 
 
@@ -82,7 +83,7 @@ TAC0 : +3
 Dégâts : 1d6 +3
 Type de dégâts : Projectile
 Facteur de vitesse : 4
-Type de compétence : Arc long
+Type de compétence : Fronde
 Type : Arme à 2 mains
 
 Poids : 2
@@ -107,7 +108,7 @@ Inutilisable par :
  Tueur de Magiciens~
 
 
-@151 = ~Dague +3 : Sournoise~
+@151 = ~Sournoise~
 @153 = ~Cette dague est fort bien forgée et a quelques enchantements magiques placés sur sa sombre lame. Elle est aussi très équilibrée et peut être lancée aisément. Si on la lance, elle revient dans la main de l'utilisateur. 20% du temps la dague s'« échappera » délibérément et effectuera une attaque sournoise sur la cible avant de revenir dans la main du lanceur.
 
 PARAMÈTRES : 
@@ -175,8 +176,8 @@ Utilisable seulement par :
 @173 = ~Cet anneau est conçu pour rassembler des clés.~
 
 
-@181 = ~Épée bâtarde +3 : Épée de Lydek~
-@183 = ~Cette épée est la dernière de celles créées par un ancien groupe de mages combattants afin d'être utilisées par leurs officiers. Ces mages n'étaient pas que seulement entraînés par les arts arcaniques mais au combat également. Cette lame garantit au porteur un bonus à son intelligence, augmente la vitesse d'incantation et ne peut être réduit au silence. Elle occasionne aussi des dégâts magiques supplémentaires quand elle touche un adversaire. Cette épée particulière fut utilisée par l'un des plus grands commandants de l'armée des mages, Lydek Terisonen. La rumeur prétend qu'elle lui fut dérobée dans sa cabane après qu'il eut pris sa retraite et fut considérée comme perdue depuis.
+@181 = ~L'épée de Lydek~
+@183 = ~Cette dague d'une taille bien supérieur à la moyenne est la dernière de celles créées par un ancien groupe de mages combattants afin d'être utilisées par leurs officiers. Ces mages n'étaient pas que seulement entraînés par les arts arcaniques mais au combat également. Cette lame garantit au porteur un bonus à son intelligence, augmente la vitesse d'incantation et ne peut être réduit au silence. Elle occasionne aussi des dégâts magiques supplémentaires quand elle touche un adversaire. Cette dague bâtarde particulière fut utilisée par l'un des plus grands commandants de l'armée des mages, Lydek Terisonen. La rumeur prétend qu'elle lui fut dérobée dans sa cabane après qu'il eut pris sa retraite et fut considérée comme perdue depuis.
 
 PARAMÈTRES : 
 
@@ -193,7 +194,7 @@ TAC0 : +3
 Dégâts : 2d4 +3
 Type de dégâts : Tranchant
 Facteur de vitesse : 3
-Type de compétence : Épée bâtarde
+Type de compétence : Dague
 Type : Arme à 1 main
 
 Poids : 5
@@ -213,7 +214,7 @@ Capacités d'équipement :
 - Mémorisation de 3 sorts profanes supplémentaires de niveau 1
 - Classe d'armure de base : 0
 - Temps d'incantation : -3
-- Force : Passe à 18
+- Force : +1
 - Force exceptionnelle : Passe à 100
 - Résistance à la magie : +5 %
 
@@ -308,7 +309,7 @@ Non utilisable par :
  Chevalier~
 
 
-@241 = ~Fronde +3 Tueuse de trolls~
+@241 = ~Tueuse de trolls~
 @243 = ~La première de ces frondes fut commandée par des colons installés dans les parages des Landes des Trolls dans le Nord. Les colons utilisèrent ces frondes pour venir aisément à bout des attaques des trolls venant des landes. Elles sont enchantées afin de créer leurs propres billes, qui infligent des dégâts de feu supplémentaires. Une fois que la région fut colonisée et fortifiée, certaines de ces frondes furent vendues à des aventuriers de passage.
 
 PARAMÈTRES : 
@@ -318,14 +319,12 @@ Capacités d'équipement :
 
 Capacités de combat : 
 - Ne nécessite pas de munitions
- 1. 1D4+5, +2 Dégâts perforants
- 2. 1D4+5, +2 Dégâts de feu
+- Inflige 2 points de dégâts de feu supplémentaires
 
 Enchantement : +3
 TAC0 : +3
 Dégâts : 1d4 +5
-Type de dégâts (Bille équipée) : Projectile
-Type de dégâts (Bille de feu) : Projectile
+Type de dégâts : Projectile
 Facteur de vitesse : 3
 Type de compétence : Fronde
 Type : Arme à 1 main
@@ -391,7 +390,7 @@ Capacités d'équipement :
 - Classe d'armure de base : -2
 - Classe d'armure : Bonus de 3 contre les armes perforantes et les projectiles
 - Classe d'armure : Bonus de 4 contre les armes tranchantes
-- Renvoie les éclairs
+- Renvoie la plupart des attaques électriques à leur lanceur
 - Empêche l'utilisation des compétences de voleur
 - Empêche l'utilisation du camouflage dans l'ombre
 
@@ -431,6 +430,9 @@ Inutilisable par :
 @291 = ~Étui d'archer~
 @293 = ~Ce petit étui est idéalement conçu pour contenir des munitions.~
 
+
+// JO 2.0
+
 //Tooltip
 
 /*COPY ~IRStore/Items/IRSLNGEL.ITM~ ~override~
@@ -442,9 +444,10 @@ LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@233" END
 	OUTER_SET ability3strref = RESOLVE_STR_REF (@302)
     APPEND ~tooltip.2da~ ~IRSLNGEL    %ability1strref%    %ability2strref%    %ability3strref%    -1~*/
 
-@300 = ~Bille de feu acide~
-@301 = ~Bille équipée~
-@302 = ~Bille de glace électrique~
+@300 = ~Bille de glace~
+@301 = ~Bille de feu~
+@302 = ~Bille électrique~
+@303 = ~Flèche enflammé~
 
 /*COPY ~IRStore/Items/IRSLNGTK.ITM~ ~override~
 SAY NAME1 @241
@@ -453,5 +456,77 @@ LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@243" END
     OUTER_SET ability1strref = RESOLVE_STR_REF (@303)
     OUTER_SET ability2strref = RESOLVE_STR_REF (@304)
     APPEND ~tooltip.2da~ ~IRSLNGTK    %ability1strref%    %ability2strref%     -1~*/
+	
+@400 = ~Aimeriez-vous prendre le temps de regarder mes marchandises ?~
 
-@303 = ~Bille de feu~
+@401 = ~Ravi de vous revoir !~	
+
+@402 = ~Mais quelle folie !~	
+
+@410 = ~Mêlée~	
+
+@411 = ~Sournoise~	
+
+
+// Errata
+
+@500 = ~Baton de Lydek~
+@501 = ~Ce bâton est le dernier de ceux créées par un ancien groupe de mages combattants afin d'être utilisées par leurs officiers. Ces mages n'étaient pas que seulement entraînés par les arts arcaniques mais au combat également. Il occasionne des dégâts magiques supplémentaires, octroie un bonus à l'intelligence, augmente la vitesse d'incantation et l'empêche d'être réduit au silence. Ce bâton en particulier fut utilisée par l'un des plus grands commandants de l'armée des mages, Lydek Terisonen. La rumeur prétend qu'après qu'il eut pris sa retraite, celui-ci lui fut dérobée dans sa cabane et considérée comme perdue depuis.
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Temps d'incantation : -2
+- Intelligence : +2
+- Dissipation du silence
+
+Capacités de combat : 
+- Inflige 3 points de dégâts magiques à la cible
+
+Enchantement : +3
+TAC0 : +3
+Dégâts : 2d4 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 1 main
+
+Poids : 5
+
+Utilisable seulement par :
+ Mage~
+
+@502 = ~Fronde de Fer~
+@503 = ~Cette fronde fut créé il y a longtemps de cela par un groupe de mages guerriers pour leurs soldats. Ledit groupe non seulement entraînait ses mages dans l'art de la magie, mais aussi à utiliser des armes. Ces frondes furent remis aux commandants de leur armée durant la guerre contre les barbares nordiques non seulement pour les protéger du froid, mais aussi pour incendier littéralement leurs ennemis. On ne sait pas combien de ces arcs ont survécu au temps.
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Attaque par round : Passe à 2
+- Résistance au froid : +50 %
+- Résistance aux dégâts de froid magiques : +50 %
+
+Capacités de combat : 
+- Ne nécessite pas de munitions
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +3
+TAC0 : +3
+Dégâts : 1d6 +3
+Type de dégâts : Projectile
+Facteur de vitesse : 4
+Type de compétence : Fronde
+Type : Arme à 2 mains
+
+Poids : 2
+
+Nécessite : 
+- Force : 6
+
+Utilisable seulement par :
+ Mage~
+ 
+@600 = ~Sacoche pour livres de <CHARNAME>~
+@601 = ~Porte-clés de <CHARNAME>~
+@602 = ~Sac à potions de <CHARNAME>~
+@603 = ~Étui d'archer de <CHARNAME>~

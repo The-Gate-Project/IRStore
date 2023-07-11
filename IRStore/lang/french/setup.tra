@@ -1,5 +1,28 @@
-@0	= ~Mod IRStore pour BG2ToB / BGT ou BG2EE / EET~
+@0	= ~Installer "IRStore Original"~
 @1	= ~Ce mod necessite l'installation de BG2ToB / BGT ou BG2EE / EET~
+
+
+// JO 2.0
+
+@2	= ~Installer "IRStore Delayed" certains items ne seront disponible qu'apres votre retour d'Ombre-Terre~
+
+@3	= ~Installer "IRStore Delayed" et "IRStore ToB"~
+
+@4	= ~Installer "IRStore ToB Only", le magasin de Nathan ne sera disponible que dans Throne of Bhaal~
+
+@5	= ~Installer "IRStore Original" et "IRStore ToB"~
+
+@6	= ~Installer "Item Errata" modification de l'arc de fer et de la longue dague de Lydek en une fronde et un baton aux pouvoirs equivalents par PROF ERRATA~
+
+@7	= ~"Items Errata" necessite que l'un des premiers composants soit installé~
+
+@8	= ~IRStore par Theo de Moree~
+// @9	= ~~~
+
+
+// @1000	= ~~
+
+
 
 
 

@@ -68,6 +68,12 @@ END ELSE BEGIN
 	COPY ~IRStore/bam~ ~override~
 END
 
+/* ----------------------------------------------- *
+ *  Installing Scripts and Dialogues  *
+ * ------------------------------------------------ */
+
+COMPILE ~IRStore/dialogue/PEIRSto.d~
+
 /* ------------------------ *
  *  Installing Items  *
  * ------------------------ */
@@ -234,6 +240,7 @@ SAY NAME1 @291
 SAY NAME2 @291
 LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@293" END
 
+/*
 ACTION_IF (FILE_EXISTS_IN_GAME ~PEIRSTO.sto~) BEGIN
 	PRINT ~Replace PEIRTYR (Hammer of Tyr) to store PEIRSTO~
 
@@ -248,4 +255,171 @@ COPY_EXISTING ~PEIRSTO.STO~ ~override~  // Change items IRStore
     END // Replace PEIRTYR (Hammer of Tyr)
 	
  END
- 
+*/
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~PEIRSTO.sto~) BEGIN
+	PRINT ~Replace PEIRTYR (Hammer of Tyr) to store PEIRSTO~
+
+COPY_EXISTING ~PEIRSTO.STO~ ~override~  // Change items IRStore
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBELT~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBOOK~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBOW1~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBOW2~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBRAC~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRDAGG~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRTYR~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRKEY~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRMASW~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRMARO~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRNIGH~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRPOTN~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRRING~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSLN1~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSLN2~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSL1H~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSL1S~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSL1P~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSL1B~
+    END
+
+	LPF REMOVE_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRAMMO~
+    END
+//
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRKEY~ position=~LAST~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBOOK~ position=~AFTER PEIRKEY~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRPOTN~ position=~AFTER PEIRBOOK~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRAMMO~ position=~AFTER PEIRPOTN~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBRAC~ position=~AFTER PEIRAMMO~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRRING~ position=~AFTER PEIRBRAC~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRDAGG~ position=~AFTER PEIRRING~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRNIGH~ position=~AFTER PEIRDAGG~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSLN2~ position=~AFTER PEIRNIGH~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBOW2~ position=~AFTER PEIRSLN2~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRMASW~ position=~AFTER PEIRBOW2~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRMARO~ position=~AFTER PEIRMASW~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSL1S~ position=~AFTER PEIRMARO~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSL1H~ position=~AFTER PEIRSL1S~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSL1B~ position=~AFTER PEIRSL1H~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSL1P~ position=~AFTER PEIRSL1B~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBELT~ position=~AFTER PEIRSL1P~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRSLN1~ position=~AFTER PEIRBELT~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRBOW1~ position=~AFTER PEIRSLN1~ flags=~identified~
+    END
+
+	LPF ADD_STORE_ITEM_EX
+      STR_VAR item_name=~PEIRTYR~ position=~AFTER PEIRBOW1~ flags=~identified~
+    END
+	
+ END

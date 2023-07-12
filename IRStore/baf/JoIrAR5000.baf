@@ -8,9 +8,23 @@ THEN
 END
 
 IF
+	Global("JOPEIRDELAY","GLOBAL",1)
+	Global("PEIRTobExists","GLOBAL",1)
+THEN
+	RESPONSE #100
+		AddStoreItem("PEIRSto","PEIRSL1P",1,1)
+		AddStoreItem("PEIRSto","PEIRBELT",1,1)
+		AddStoreItem("PEIRSto","PEIRSLN1",1,1)
+		AddStoreItem("PEIRSto","PEIRBOW1",1,1)
+		AddStoreItem("PEIRSto","PEIRTYR",1,1)
+		SetGlobal("JOPEIRDELAY","GLOBAL",2)
+END
+
+IF
 	Global("PEIRTob2Exists","GLOBAL",1)
 THEN
 	RESPONSE #100
+		SetGlobal("PEIRTobExists","GLOBAL",2)
 		ActionOverride("PEIRSto",EscapeArea())
 END
 

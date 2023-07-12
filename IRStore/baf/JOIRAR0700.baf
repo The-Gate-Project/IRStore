@@ -1,0 +1,52 @@
+IF
+	Global("PEIRNathan","AR0700",0)
+THEN
+	RESPONSE #100
+		SetGlobal("PEIRNathan","AR0700",1)
+		CreateCreature("PEIRSto",[2075.1220],15) 
+END
+
+IF
+	Global("PEIRNathan","AR0700",1)
+	Global("JOPEIRDELAY","GLOBAL",0)
+	!GlobalGT("Chapter","GLOBAL","%bg2_chapter_5%")
+THEN
+	RESPONSE #100
+		SetGlobal("JOPEIRDELAY","GLOBAL",1)
+		RemoveStoreItem("PEIRSto","PEIRSLN1",1)
+		RemoveStoreItem("PEIRSto","PEIRBOW1",1)
+		RemoveStoreItem("PEIRSto","PEIRTYR",1)
+		RemoveStoreItem("PEIRSto","PEIRSL1P",1)
+		RemoveStoreItem("PEIRSto","PEIRBELT",1)
+END
+
+IF
+	Global("PEIRNathan","AR0700",1)
+	Global("JOPEIRDELAY","GLOBAL",1)
+	GlobalGT("Chapter","GLOBAL","%bg2_chapter_5%")
+THEN
+	RESPONSE #100
+		AddStoreItem("PEIRSto","PEIRSL1P",1,1)
+		AddStoreItem("PEIRSto","PEIRBELT",1,1)
+		AddStoreItem("PEIRSto","PEIRSLN1",1,1)
+		AddStoreItem("PEIRSto","PEIRBOW1",1,1)
+		AddStoreItem("PEIRSto","PEIRTYR",1,1)
+		SetGlobal("JOPEIRDELAY","GLOBAL",2)
+END
+
+IF
+	Global("PEIRTobExists","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("PEIRNathan","AR0700",2)
+		ActionOverride("PEIRSto",EscapeArea())
+END
+
+
+IF
+	Global("PEIRTob2Exists","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("PEIRNathan","AR0700",2)
+		ActionOverride("PEIRSto",EscapeArea())
+END

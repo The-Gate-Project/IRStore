@@ -10,6 +10,7 @@ IF
 	Global("PEIRTobExists","GLOBAL",1)
 THEN
 	RESPONSE #100
+		SetGlobal("PEIRNathan","AR0700",2)
 		ActionOverride("PEIRSto",EscapeArea())
 END
 
@@ -18,5 +19,6 @@ IF
 	Global("PEIRTob2Exists","GLOBAL",1)
 THEN
 	RESPONSE #100
+		SetGlobal("PEIRNathan","AR0700",2)
 		ActionOverride("PEIRSto",EscapeArea())
 END

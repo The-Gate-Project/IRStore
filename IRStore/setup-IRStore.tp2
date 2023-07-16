@@ -26,7 +26,12 @@ ACTION_IF GAME_IS ~eet~ BEGIN
 			OUTER_SPRINT name_source ~bg2_chapter_%i%~
 			OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 		END
-		
+	
+
+ACTION_IF GAME_IS ~bgt~ BEGIN
+APPEND ~Action.ids~ ~362 RemoveStoreItem(S:Store*,S:Item*,I:Count*)~ UNLESS ~362 RemoveStoreItem(S:Store*,S:Item*,I:Count*)~
+APPEND ~Action.ids~ ~363 AddStoreItem(S:Store*,S:Item*,I:Count*,I:Flags*)~ UNLESS ~363 AddStoreItem(S:Store*,S:Item*,I:Count*,I:Flags*)~
+END
 
 			//Copies tra files into the autotra-folder (to leave the originals untouched)
     DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
@@ -75,7 +80,8 @@ LANGUAGE ~Francais (par Prof Errata)~
 // Original
 
 BEGIN @0
-DESIGNATED 0 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree~
+DESIGNATED 0 SUBCOMPONENT @8 
+LABEL ~IRStore-Theo-de-Moree~
 REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
 	PRINT ~Original component~
 
@@ -89,8 +95,9 @@ EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/IRAR0700.baf~ // cre nathan to PEIRSto
 
 
 BEGIN @2 
-DESIGNATED 2 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree-Delayed~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+DESIGNATED 2 SUBCOMPONENT @8 
+LABEL ~IRStore-Theo-de-Moree-Delayed~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
 	PRINT ~Delayed component~
 
 EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/JOIRAR0700.baf~ // cre nathan to PEIRSto
@@ -103,8 +110,9 @@ EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/JOIRAR0700.baf~ // cre nathan to PEIRSto
 
 
 BEGIN @3 
-DESIGNATED 3 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree-DelayedToB~
-REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+DESIGNATED 3 SUBCOMPONENT @8 
+LABEL ~IRStore-Theo-de-Moree-DelayedToB~
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
 	PRINT ~Nathan in ToB + Delayed component~
 
 EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/JOIRAR0700.baf~ // cre nathan to PEIRSto
@@ -123,7 +131,8 @@ EXTEND_BOTTOM ~AR6400.bcs~ ~IRStore/baf/JoIrAR6400.baf~  // cre nathan to PEIRSt
 
 
 BEGIN @4 
-DESIGNATED 4 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree-ToBOnly~
+DESIGNATED 4 SUBCOMPONENT @8 
+LABEL ~IRStore-Theo-de-Moree-ToBOnly~
 REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
 	PRINT ~Nathan in ToB Only component~
 
@@ -140,7 +149,8 @@ EXTEND_BOTTOM ~AR6400.bcs~ ~IRStore/baf/JoIrAR6400.baf~  // cre nathan to PEIRSt
 
 
 BEGIN @5 
-DESIGNATED 5 SUBCOMPONENT @8 LABEL ~IRStore-Theo-de-Moree-OriginalToB~
+DESIGNATED 5 SUBCOMPONENT @8 
+LABEL ~IRStore-Theo-de-Moree-OriginalToB~
 REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
 	PRINT ~Nathan in ToB + Original component~
 
@@ -160,7 +170,8 @@ EXTEND_BOTTOM ~AR6400.bcs~ ~IRStore/baf/JoIrAR6400.baf~  // cre nathan to PEIRSt
 
 
 BEGIN @6 
-DESIGNATED 6 LABEL ~IRStore-Theo-de-Moree-Errata~
+DESIGNATED 6 
+LABEL ~IRStore-Theo-de-Moree-Errata~
 REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~PEIRSto.sto~) @7 /* "Items Errata" need one of the first componants to be installed */
 	PRINT ~Items Errata for PEIRSto~
 

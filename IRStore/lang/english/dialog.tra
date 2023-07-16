@@ -37,7 +37,7 @@ Unusable by:
 STATISTICS: 
 
 Equipped abilities: 
-- Attack per round: Set to 2
+- Attack per round: +1
 
 Combat abilities: 
 - Requires no ammunition
@@ -69,7 +69,7 @@ Not Usable By:
 STATISTICS: 
 
 Equipped abilities: 
-- Attack per round: Set to 2
+- Attack per round: +1
 - Cold Resistance: +50 %
 - Magical Cold Resistance: +50 %
 
@@ -113,15 +113,13 @@ Unusable by:
 
 STATISTICS: 
 
-Combat abilities: 
+Combat abilities (Thrown): 
 - Returns to the wielder's hand when thrown
 - Attack per round: Set to 3
 - 21 % chance to inflict 3d4 piercing damage to the target
 
 Enchantment: +3
-Damage: 1d4 +3
-Damage Type (Melee): Piercing
-Damage Type (Thrown): Piercing
+Damage: 1d4 +3 (Piercing)
 Speed Factor: 2
 Proficiency Type: Dagger
 Type: One-Handed
@@ -237,8 +235,7 @@ Equipped abilities:
 Charge abilities: 
 - Invisibility (instant) (3x per day)
 
-Combat abilities: 
-- Bonuses to hit and damage based on Strength do not apply to this weapon
+Combat abilities:
 - Inflicts 3 magic cold damage to the target
 - 21 % chance of slowing the target for 1 turn
 
@@ -269,8 +266,8 @@ Not Usable By:
 @223 = ~The first of these rings was commissioned by Sir Iconius Rathmor, a paladin of some reknown in the realms, to aid in the recovery of a holy artifact stolen by the agents of a powerful vampire. Of all the species of undead, Sir Rathmor feared the mind domination and life stealing powers of the vampire the most. As a result, he commissioned this ring to not only protect him from those powers, but to create weapons to rid the realms of the plague of vampirism. The mage that created the first ring decided that more should be made, seeing the potential for profit. However, this mage mysteriously disappeared after producing a limited number of these rings. It was later learned that the mage was killed by a vampire who learned that he was the one flooding the realms with these powerful items.
 
 Equipped Abilities:
- Immune to Level Drain, Charm Person, Dire Charm, and Domination
- Creates wooden stakes upon command
+- Immunity to charms and level drain
+- Creates wooden stakes upon command
 
 Unusable by:
  Wizard Slayer~
@@ -279,29 +276,31 @@ Unusable by:
 @231 = ~Sling of the Elements~
 @233 = ~This sling was created by a powerful wizard by the name of Lydek Terisonen. Looking for a way to save room for his many spell components, he created this sling to create it's own bullets from thin air. This sling can hurl three different types of bullets: Equipped, Electric ice, and Acid fire.
 
-STATISTICS:
+STATISTICS: 
 
-Combat abilities: 
+Combat abilities (Fire bullet): 
 - Requires no ammunition
- 1. 1d4+2, +2 Missile Damage
- 2. 1d4+2, +2 Electric ice damage
- 3. 1d4+2, +2 Acid fire damage
- Note:  Do not equip normal bullets with this item
- 
+- Inflicts 2 fire damage to the target
+
+Combat abilities (Electrical bullet):
+- Requires no ammunition
+- Inflicts 2 electrical damage to the target
+
+Combat abilities (Frost bullet):
+- Requires no ammunition
+- Inflicts 2 cold damage to the target
+
 Enchantment: +4
 THAC0: +4
-Damage: 1d4 +6
-Damage Type (equipped) : Missile
-Damage Type (Cold, Electrical): Missile
-Damage Type (fire, acid): Missile
+Damage: 1d4 +6 (Missile)
 Speed Factor: 2
-Proficiency Type: Sling
+Proficiency Type: Fronde
 Type: One-Handed
 
-Weight: 0
-
 Requires: 
-- Strength: 3
+- 3 Strength
+
+Weight: 0
 
 Not Usable By:
  Kensai
@@ -314,18 +313,15 @@ Not Usable By:
 STATISTICS: 
 
 Equipped abilities: 
-- Attack per round: Set to 1
+- Attack per round: +1
 
 Combat abilities: 
 - Requires no ammunition
- 1. 1D4+5, +2 Missile Damage
- 2. 1D4+5, +2 fire Damage
+- Inflicts 2 fire damage to the target
 
 Enchantment: +3
 THAC0: +3
-Damage: 1d4 +5
-Damage Type (equipped) : Missile
-Damage Type (fire) : Missile
+Damage: 1d4 +5 (Missile)
 Speed Factor: 3
 Proficiency Type: Sling
 Type: One-Handed
@@ -367,6 +363,8 @@ STATISTICS:
 
 Special Abilities: 
  30% chance of Slaying any Lycanthrope hit
+ 
+Enchantment: +3
 THAC0: +3, +5 vs. Lycanthropes
 Damage: 1D8 +3, +5 vs. Lycanthropes
 Damage type: Slashing
@@ -388,15 +386,16 @@ Not Usable By:
 STATISTICS: 
 
 Equipped abilities: 
-- Base Armor Class: -2
-- Armor Class: 3 bonus vs. piercing and missile attacks
-- Armor Class: 4 bonus vs. slashing attacks
-- Reflect the lightnings
+- Reflect the lightning
+- Prevents the use of thief skills
+- Prevents the use of Hide in shadows
 
-Weight: 50
+Armor Class: -2 (-6 vs. slashing attacks, -5 vs. piercing and missile attacks)
 
 Requires: 
-- Strength: 15
+- 15 Strength
+
+Weight: 50
 
 Not Usable By:
  Bard

@@ -65,7 +65,7 @@ Inutilisable par :
 
 
 @131 = ~Arc de Fer~
-@133 = ~Cet arc inhabituel permet au mage compétent avec la fronde de l'utiliser sans pénalités, il fut créé il y a longtemps de cela par un groupe de mages guerriers pour leurs soldats. Ledit groupe non seulement entraînait ses mages dans l'art de la magie, mais aussi à utiliser des armes. Ces arcs furent remis aux commandants de leur armée durant la guerre contre les barbares nordiques non seulement pour les protéger du froid, mais aussi pour incendier littéralement leurs ennemis. On ne sait pas combien de ces arcs ont survécu au temps.
+@133 = ~Cet arc inhabituel permet au mage compétent avec les frondes de l'utiliser sans pénalités, il fut créé il y a longtemps de cela par un groupe de mages guerriers pour leurs soldats. Ledit groupe non seulement entraînait ses mages dans l'art de la magie, mais aussi à utiliser des armes. Ces arcs furent remis aux commandants de leur armée durant la guerre contre les barbares nordiques non seulement pour les protéger du froid, mais aussi pour incendier littéralement leurs ennemis. On ne sait pas combien de ces arcs ont survécu au temps.
 
 PARAMÈTRES : 
 
@@ -113,23 +113,21 @@ Inutilisable par :
 
 PARAMÈTRES : 
 
-Capacités de combat : 
-- Revient dans la main du lanceur
+Capacités de combat (à distance) : 
+- Revient dans la main de son porteur après avoir été lancée
 - Attaque par round : Passe à 3
-- 21 % de chance d'infliger 3d4 points de dégâts perforants à la cible
+- 21 % de chances d'infliger 3d4 points de dégâts perforants à la cible
 
 Enchantement : +3
-Dégâts : 1d4 +3
-Type de dégâts (au corps à corps) : Perforant
-Type de dégâts (à distance) : Perforant
+Dégâts : 1d4 +3 (Perforant)
 Facteur de vitesse : 2
 Type de compétence : Dague
 Type : Arme à 1 main
 
-Poids : 1
-
 Nécessite : 
-- Force : 3
+- 3 en Force
+
+Poids : 1
 
 Inutilisable par :
  Clerc~
@@ -150,22 +148,20 @@ Capacités de charge :
 - Guérison (comme un lanceur de sorts de niveau 20) (2 fois par jour)
 
 Capacités de combat : 
-- Revient dans la main du lanceur
+- Revient dans la main de son porteur après avoir été lancée
 
 Enchantement : +5
 TAC0 : +5
-Dégâts : 2d4 +6
-Type de dégâts (au corps à corps) : Contondant
-Type de dégâts (à distance) : Contondant
+Dégâts : 2d4 +6 (Contondant)
 Facteur de vitesse : 1
 Type de compétence : Marteau de guerre
 Type : Arme à 1 main
 
-Poids : 4
-
 Nécessite : 
-- Force : 14
-- Sagesse : 17
+- 14 en Force
+- 17 en Sagesse
+
+Poids : 4
 
 Utilisable seulement par :
  Clerc d'alignement bon
@@ -237,7 +233,6 @@ Capacités de charge :
 - Invisibilité (instantané) (3 fois par jour)
 
 Capacités de combat : 
-- Les bonus de Force ne s'appliquent pas à cette arme
 - Inflige 3 points de dégâts de froid magique à la cible
 - 21 % de chance d'infliger lenteur à la cible pendant 1 tour
 
@@ -267,11 +262,9 @@ Inutilisable par :
 @221 = ~Anneau de protection vampirique~
 @223 = ~Le premier de ces anneaux fut commandé par Sire Iconius Rathmor, un paladin réputé dans les royaumes, pour l'aider à la récupération d'une relique sacrée dérobée par les agents d'un puissant vampire. Parmi toutes les espèces de mort-vivants, ce que Sire Rathmor redoutait le plus étaient les pouvoirs de domination mentale et de drainage de vie des vampires. En conséquence, il commanda cet anneau non seulement pour se protéger de ces pouvoirs, mais aussi pour créer des armes pour débarrasser les royaumes de la peste du vampirisme. Le mage qui créa le premier anneau décida qu'il pouvait en faire davantage, voyant le potentiel pour des profits. Cependant, ce mage mystérieusement disparut après avoir produit un nombre limité de ces anneaux. On apprit ultériurement que le mage fut tué par un vampire qui avait appris qu'il était le seul fournisseur des royaumes de ces puissants objets.
 
-PARAMÈTRES :
-
-Capacités spéciales :
- Immunité au Drainage de niveaux, Charme, Charme néfaste et Domination
- Création d'épieux en bois à volonté
+Capacités d'équipement : 
+- Immunité aux charmes et au drain de niveaux
+- Création d'épieux en bois à volonté
 
 Inutilisable par :
  Tueur de Magiciens~
@@ -280,29 +273,31 @@ Inutilisable par :
 @231 = ~Fronde des Éléments~
 @233 = ~Cette fronde fut créée par un puissant mage du nom de Lydek Terisonen. Cherchant un moyen de faire de la place pour ses divers composants de sorts, il créa cette fronde afin d'obtenir ses propres billes à volonté. Cette fronde peut lancer trois types différents de billes : équipée, froid électrique et feu acide.
 
-PARAMÈTRES :
+PARAMÈTRES : 
 
-Capacités de combat : 
+Capacités de combat (Bille de feu) : 
 - Ne nécessite pas de munitions
- 1. 1D4+6, +2 Dégâts perforants
- 2. 1D4+6, +4 Dégâts de froid électrique
- 3. 1D4+6, +4 Dégâts de feu acide
- Note: ne pas utiliser de billes normales avec cette arme
- 
+- Inflige 2 points de dégâts de feu à la cible
+
+Capacités de combat (Bille électrique) : 
+- Ne nécessite pas de munitions
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Capacités de combat (Bille de glace) : 
+- Ne nécessite pas de munitions
+- Inflige 2 points de dégâts de froid à la cible
+
 Enchantement : +4
 TAC0 : +4
-Dégâts : 1d4 +6
-Type de dégâts (Bille équipée) : Projectile
-Type de dégâts (Bille de glace électrique) : Projectile
-Type de dégâts (Bille de feu acide) : Projectile
+Dégâts : 1d4 +6 (Projectile)
 Facteur de vitesse : 2
 Type de compétence : Fronde
 Type : Arme à 1 main
 
-Poids : 0
-
 Nécessite : 
-- Force : 3
+- 3 en Force
+
+Poids : 0
 
 Non utilisable par :
  Kensai
@@ -315,24 +310,23 @@ Non utilisable par :
 PARAMÈTRES : 
 
 Capacités d'équipement : 
-- Attaque par round : Passe à 1
+- Attaque par round : +1
 
 Capacités de combat : 
 - Ne nécessite pas de munitions
-- Inflige 2 points de dégâts de feu supplémentaires
+- Inflige 2 points de dégâts de feu à la cible
 
 Enchantement : +3
 TAC0 : +3
-Dégâts : 1d4 +5
-Type de dégâts : Projectile
+Dégâts : 1d4 +5 (Projectile)
 Facteur de vitesse : 3
 Type de compétence : Fronde
 Type : Arme à 1 main
 
-Poids : 0
-
 Nécessite : 
-- Force : 3
+- 3 en Force
+
+Poids : 0
 
 Non utilisable par :
  Kensai
@@ -365,7 +359,9 @@ Inutilisable par :
 PARAMÈTRES :
 
 Capacité de combat :
- 30% de chance de tuer tout lycanthrope au toucher
+- 30% de chance de tuer tout lycanthrope au toucher
+
+Enchantement : +3
 TAC0 : +3, +5 contre les lycanthropes
 Dégâts : 1D8+3, +5 contre les lycanthropes
 Type de dégât : Tranchant
@@ -387,17 +383,18 @@ Inutilisable par :
 PARAMÈTRES : 
 
 Capacités d'équipement : 
-- Classe d'armure de base : -2
-- Classe d'armure : Bonus de 3 contre les armes perforantes et les projectiles
-- Classe d'armure : Bonus de 4 contre les armes tranchantes
-- Renvoie la plupart des attaques électriques à leur lanceur
-- Empêche l'utilisation des compétences de voleur
+- Renvoie les éclairs
+- Renvoie le sort Orage vengeur
+- Renvoie le sort Glyphe de garde
+- Empêche l'utilisation des compétences de roublard
 - Empêche l'utilisation du camouflage dans l'ombre
 
-Poids : 50
+Classe d'armure : -2 (-6 contre les armes tranchantes, -5 contre les armes perforantes et les projectiles)
 
 Nécessite : 
-- Force : 15
+- 15 en Force
+
+Poids : 50
 
 Inutilisable par :
  Barde

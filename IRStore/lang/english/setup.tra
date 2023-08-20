@@ -15,8 +15,13 @@
 @6	= ~Install "Item Errata" change Iron Bow andt Lydek's Sword into a sling and a staff with same power by PROF ERRATA~
 
 @7	= ~"Items Errata" need one of the first componants to be installed~
-// @8	= ~~
-// @9	= ~~~
+
+@8	= ~IRStore by Theo de Moree~
+
+
+
+
+@9	= ~This componant requires BG2EE / EET~
 
 
 // @1000	= ~~

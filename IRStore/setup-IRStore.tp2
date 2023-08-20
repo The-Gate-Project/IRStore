@@ -97,7 +97,7 @@ EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/IRAR0700.baf~ // cre nathan to PEIRSto
 BEGIN @2 
 DESIGNATED 2 SUBCOMPONENT @8 
 LABEL ~IRStore-Theo-de-Moree-Delayed~
-REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @9  /* Ce composant necessite BG2EE / EET */
 	PRINT ~Delayed component~
 
 EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/JOIRAR0700.baf~ // cre nathan to PEIRSto
@@ -112,7 +112,7 @@ EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/JOIRAR0700.baf~ // cre nathan to PEIRSto
 BEGIN @3 
 DESIGNATED 3 SUBCOMPONENT @8 
 LABEL ~IRStore-Theo-de-Moree-DelayedToB~
-REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @1  /* This mod requires BG2ToB / BGT or BG2EE / EET to be installed. */
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @9  /* Ce composant necessite BG2EE / EET */
 	PRINT ~Nathan in ToB + Delayed component~
 
 EXTEND_BOTTOM ~AR0700.bcs~ ~IRStore/baf/JOIRAR0700.baf~ // cre nathan to PEIRSto
